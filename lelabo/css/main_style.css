@@ -235,6 +235,7 @@
     padding: 100px 0;
 }
 #about_02>div{
+    width: 90%;
     margin: 0 auto;
     text-align: center;
     color: #fff;
@@ -242,7 +243,7 @@
 }
 #about_02 h3{
     font-family: Yedangche, serif;
-    font-size: 2.5em;
+    font-size: 2.3em;
     line-height: 1.4em;
     margin-bottom: 1.5em;
 
@@ -255,7 +256,7 @@
 }
 #about_02>div>p{
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 2em;
     margin-bottom: 3em;
 }

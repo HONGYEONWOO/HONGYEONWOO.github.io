@@ -114,15 +114,29 @@
 
         text-align: center;
     }
+    #circle{
+        width: 30em;
+    }
+    #circle>li, #best_img>li>img{
+        width: 9em;
+    }
+    .number{
+        font-size: 4.5em;
+    }
+    #circle>li>span:nth-child(2){
+        font-size: 0.8em;
+    }
     #about_03>h2{
         font-size: 1.6em;
     }
     #best_img{
-        width: 36.8em;
+        width: 29em;
+        margin: 5% auto 0 auto;
     }
-    #best_img>li>img{
-        width: 11em;
+    #best_img>li{
+        padding: 0.2em;
     }
+
     #footer_logo{
         float: none;
         width: 50%;
@@ -130,6 +144,9 @@
     }
     #footer_logo>img{
         margin: 0 auto;
+    }
+    #footer_menu>li>span{
+        font-size: 1em;
     }
 
     /* 서브페이지 about */
