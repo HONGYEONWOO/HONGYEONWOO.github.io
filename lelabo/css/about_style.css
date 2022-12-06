@@ -1,0 +1,360 @@
+/* ===== sub_main ====== */
+#sub_main{
+    position: relative;
+
+    width: 100%;
+    height: 660px;
+    background: url("../images/sub_main_01.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#sub_main>p{
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 1.7em;
+    color: #fff;
+
+    display: none;
+}
+
+/* ===== think ===== */
+#think{
+    width: 95%;
+    margin: 7em auto;
+}
+#think>h1{
+    font-family: AppleB, sans-serif;
+    font-size: 3em;
+    margin-bottom: 1em;
+    text-align: center;
+
+    opacity: 0;
+}
+#think>h1.move{
+    opacity: 1;
+
+    /* .move animation */
+    animation-name: upMove;
+    animation-duration: 400ms;
+    animation-timing-function: ease-out;
+}
+#think_box{
+    height: 240px;
+    
+    overflow: hidden;
+
+    opacity: 0;
+}
+#think_box.move{
+    opacity: 1;
+    
+    /* .move animation */
+    animation-name: leftMove;
+    animation-duration: 400ms;
+    animation-timing-function: ease-out;
+}
+#think_box>ul>li{
+    font-size: 1.2em;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    opacity: 0.3;
+
+    white-space: nowrap;
+}
+#think_box>ul>li.on{
+    opacity: 1;
+    font-size: 1.5em;
+    font-family: AppleB, sans-serif;
+
+    transition-duration: 400ms;
+}
+
+/* ===== service ===== */
+#service_bg{
+    width: 100%;
+    background: url("../images/sub_background.jpg") no-repeat;
+    background-size: cover;
+}
+#service_bg>ul{
+    margin: 0 auto;
+    padding: 3em 0;
+}
+#service{
+    width: 80%;
+}
+#service_bg>ul>li{
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+#service>li{
+    width: 32%; 
+}
+#service_bg>ul>li>img{
+    display: block;
+    width: 100%;
+}
+#service>li:nth-child(3n), #mo_service>li:nth-child(even){
+    margin-right: 0;
+}
+.service{
+    position: relative;
+}
+#blank>span{
+    display: none;
+}
+.text{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    opacity: 0;
+}
+.text.move{
+    opacity: 1;
+    
+    /* .move animation */
+    animation-name: textMove;
+    animation-duration: 400ms;
+    animation-timing-function: ease-out;
+}
+
+@keyframes textMove{
+    from{
+        transform: translateY(-50%) translateX(50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(-50%) translateX(0);
+        opacity: 1;
+    }
+  }
+.text>h3{
+    font-family: Bebas, sans-serif;
+    font-size: 2.8em;
+
+    white-space: nowrap;
+    margin-bottom: 0.5em;
+}
+.text>h3>span{
+    font-size: 0.8em;
+    margin-right: 0.5em;
+    opacity: 0.5;
+}
+.text>p{
+    font-size: 1.1em;
+    line-height: 2em;
+}
+.mo_blank{
+    visibility: hidden;
+}
+
+/* === mobile_service === */
+#mo_service{
+    display: none;
+
+    width: 80%;
+    margin: 0 auto;
+}
+#mo_service>li{
+    width: 48%;
+}
+#mo_service .text>h3>span{
+    display: block;
+}
+
+
+/* ===== ingredients ===== */
+#ingredients{
+    width: 80%;
+    margin: 8em auto 10em auto;
+}
+#ingredients>li{
+    float: left;
+    width: 24.25%;
+    height: 388px;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+#ingredients>li:nth-child(2){
+    width: 49.5%;
+    padding-top: 90px;
+    box-sizing: border-box;
+}
+#ingredients>li:nth-child(3), #ingredients>li:nth-child(7), #ingredients>li:nth-child(11){
+    margin-right: 0;
+}
+.ingredients_title>h2{
+    font-family: Bebas, sans-serif;
+    font-size: 4.5em;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.ingredients_title>p{
+    width: 80%;
+    margin: 1.5em auto 2.5em auto;
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.7em;
+
+    opacity: 0;
+}
+.ingredients_title>p.move{
+    opacity: 1;
+
+    animation-name: upMove;
+    animation-duration: 400ms;
+    animation-timing-function: ease-out;
+}
+.ingredients_title>span{
+    display: block;
+    width: 65%;
+    margin: 0 auto;
+    text-align: right;
+    line-height: 1.7em;
+    opacity: 0.8;
+    font-size: 0.8em;
+}
+
+/* === ingredients img === */
+#ingredients>li:nth-child(1){background: url(../images/ingredients_01.jpg) no-repeat center top / cover;}
+#ingredients>li:nth-child(3){background: url(../images/ingredients_02.jpg) no-repeat center top / cover;}
+#ingredients>li:nth-child(4){background: url(../images/ingredients_03.jpg) no-repeat center top / cover;}
+#ingredients>li:nth-child(5){background: url(../images/ingredients_04.jpg) no-repeat center top / cover;}
+#ingredients>li:nth-child(6){background: url(../images/ingredients_05.jpg) no-repeat center top / cover;}
+#ingredients>li:nth-child(7){background: url(../images/ingredients_06.jpg) no-repeat center top / cover;}
+#ingredients>li:nth-child(8){background: url(../images/ingredients_07.jpg) no-repeat center top / cover;}
+#ingredients>li:nth-child(9){background: url(../images/ingredients_08.jpg) no-repeat center top / cover;}
+#ingredients>li:nth-child(10){background: url(../images/ingredients_09.jpg) no-repeat center top / cover;}
+#ingredients>li:nth-child(11){background: url(../images/ingredients_10.jpg) no-repeat center top / cover;}
+#ingredients>li:nth-child(12){background: url(../images/ingredients_11.jpg) no-repeat center top / cover;}
+
+#ingredients>li>a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    transition-duration: 100ms;
+    opacity: 0;
+}
+.ingredients_text{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+
+    width: 80%;
+
+    font-family: AppleL, sans-serif;
+    text-align: center;
+    line-height: 2em;
+    font-size: 0.9em;
+
+    color: white;
+}
+.ingredients_text>h3{
+    font-family: Bebas, sans-serif;
+    font-size: 2.5em;
+}
+.name{
+    display: block;
+    line-height: 3em;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.ingredients_text>p{
+    text-align: justify;
+}
+.view{
+    display: block;
+    margin-top: 30px;
+}
+#ingredients>li:hover>a{
+    opacity: 1;
+}
+
+/* === mobile_ingredients === */
+#mo_ingredients{
+    display: none;
+    text-align: center;
+    margin: 8em auto 10em auto;
+}
+#mo_list{
+    margin-top: 2em;
+    color: #fff;
+}
+.list{
+    position: relative;
+    float: left;
+
+    width: 49.5%;
+    height: 15vh;
+
+    margin-bottom: 1%;
+}
+.list:nth-child(odd){
+    margin-right: 1%;
+}
+.mo_name{
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+    text-align: right;
+}
+.list span{
+    display: block;
+}
+.mo_name>span:first-child{
+    font-family: Bebas, sans-serif;
+    font-size: 2em;
+}
+.click{
+    display: none;
+}
+.click.on{
+    display: block;
+}
+.click a{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    padding: 1em;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.95);
+
+    line-height: 1.6em;
+    color: #fff;
+    font-size: 0.95em;
+    text-align: justify;
+}
+.click span{
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    text-align: right;
+
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: underline;
+}
+.list:nth-child(1){background: url("../images/ingredients_01.jpg") no-repeat center / cover;}
+.list:nth-child(2){background: url("../images/ingredients_02.jpg") no-repeat center / cover;}
+.list:nth-child(3){background: url("../images/ingredients_03.jpg") no-repeat center / cover;}
+.list:nth-child(4){background: url("../images/ingredients_04.jpg") no-repeat center / cover;}
+.list:nth-child(5){background: url("../images/ingredients_05.jpg") no-repeat center / cover;}
+.list:nth-child(6){background: url("../images/ingredients_06.jpg") no-repeat center / cover;}
+.list:nth-child(7){background: url("../images/ingredients_07.jpg") no-repeat center / cover;}
+.list:nth-child(8){background: url("../images/ingredients_08.jpg") no-repeat center / cover;}
+.list:nth-child(9){background: url("../images/ingredients_09.jpg") no-repeat center / cover;}
+.list:nth-child(10){background: url("../images/ingredients_10.jpg") no-repeat center / cover;}

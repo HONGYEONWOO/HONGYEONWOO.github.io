@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le labo about</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about_style.css">
+    <link rel="stylesheet" href="css/mobile_style.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/about_script.js"></script>
+</head>
+<body>
+    <div id="notice">
+        <div class="clearfix">
+            <button id="notice_prev" class="button"><span>prev</span></button>
+            <div id="notice_container">
+                <ul class="clearfix">
+                    <li><a href="#">향수를 구매하시는 모든 분들에게 라벨링 서비스가 제공됩니다.</a></li>
+                    <li><a href="#">안전 조치 및 주문량 증가로 인해 온라인 주문이 지연될 수 있습니다.</a></li>
+                    <li><a href="#">100,000원 이상 구매시 무료 배송이 제공됩니다.</a></li>
+                </ul>
+            </div>
+            <button id="notice_next" class="button"><span>next</span></button>
+        </div>
+    </div>    <!-- //#notice -->
+
+    <div id="sub_main" class="clearfix">
+        <nav id="nav">
+            <div id="logo">
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+
+            <ul id="menu" class="clearfix">
+                <li>향수</li>
+                <li>홈</a></li>
+                <li>바디케어</a></li>
+                <li><a href="#skin">스타일링</a></li>
+                <li><a href="#gift">기프트</a></li>
+                <li>여행제품</a></li>
+                <li>르라보소개</a></li>
+            </ul>        <!-- //#menu -->
+
+            <ul id="user" class="clearfix">
+                <li><a href="#login">로그인</a></li>
+                <li><a href="#mypage">마이페이지</a></li>
+            </ul>        <!-- //#user -->
+
+            <!-- mobile -->
+            <div id="mobile" class="clearfix">
+                <ul id="mo_icon" class="clearfix">
+                    <li><a href="#login"><span>로그인</span></a></li>
+                    <li><a href="#login"><span>마이페이지</span></a></li>
+                    <li id="mo_menuicon"><span>서브메뉴</span></li>
+                </ul>            <!-- //#mo_icon -->
+
+                <div id="mo_show" class="clearfix">
+                    <div id="mo_hide"><span>close</span></div>
+                    <ul id="mo_menu">
+                        <li>
+                            <h5 class="mo_title">향수</h5>
+                            <ul class="mo_submenu">
+                                <li><a href="product.html">클래식 컬렉션</a></li>
+                                <li><a href="product.html">오 드 퍼퓸</a></li>
+                                <li><a href="product.html">견본 샘플</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mo_title">홈</h5>
+                            <ul class="mo_submenu">
+                                <li><a href="product.html">클래식 캔들</a></li>
+                                <li><a href="product.html">홈 향수</a></li>
+                                <li><a href="product.html">콘크리트 양초</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mo_title">바디케어</h5>
+                            <ul class="mo_submenu">
+                                <li><a href="product.html">바디</a></li>
+                                <li><a href="product.html">헤어</a></li>
+                                <li><a href="product.html">페이스</a></li>
+                                <li><a href="product.html">향기 별</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mo_title">
+                                <a href="product.html">스타일링</a>
+                            </h5>
+                        </li>
+                        <li>
+                            <h5 class="mo_title">
+                                <a href="#gift">기프트</a>
+                            </h5>
+                        </li>
+                        <li>
+                            <h5 class="mo_title">여행제품</h5>
+                            <ul class="mo_submenu">
+                                <li><a href="product.html">여행용 튜브</a></li>
+                                <li><a href="product.html">여행용 세트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mo_title">르라보소개</h5>
+                            <ul class="mo_submenu">
+                                <li><a href="about.html">르라보 소개</a></li>
+                                <li><a href="#">향 추천</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">로그인</a>
+                            <a href="#">회원가입</a>
+                            <a href="#">고객센터</a>
+                        </li>
+                    </ul>            <!-- //#mo_menu -->
+                </div>
+            </div>            <!-- //#mobile -->
+        </nav>        <!-- //#nav -->
+
+        <div id="dropdown">
+            <div id="dropdown_box" class="clearfix">
+                <ul>
+                    <li><a href="product.html">클래식 컬렉션</a></li>
+                    <li><a href="product.html">오 드 퍼퓸</a></li>
+                    <li><a href="product.html">견본 샘플</a></li>
+                </ul>
+                <ul>
+                    <li><a href="product.html">클래식 캔들</a></li>
+                    <li><a href="product.html">홈 향수</a></li>
+                    <li><a href="product.html">콘크리트 양초</a></li>
+                </ul>
+                <ul>
+                    <li><a href="product.html">바디</a></li>
+                    <li><a href="product.html">헤어</a></li>
+                    <li><a href="product.html">페이스</a></li>
+                    <li><a href="product.html">향기 별</a></li>
+                </ul>
+                <ul class="blank"><li>blank</li></ul>
+                <ul class="blank"><li>blank</li></ul>
+                <ul>
+                    <li><a href="product.html">여행용 튜브</a></li>
+                    <li><a href="product.html">여행용 세트</a></li>
+                </ul>
+                <ul>
+                    <li><a href="about.html">르라보 소개</a></li>
+                    <li><a href="#">향 추천</a></li>
+                </ul>
+            </div>        <!-- //#dropdown_box -->
+        </div>        <!-- //#dropdown -->
+        
+        <p>
+            2006년 뉴욕에서 탄생한 핸드 메이드 퍼퓸 하우스<br>르 라보를 소개합니다. 르 라보는 향수를 만드는 실험실을  테마로<br>핸드메이드 퍼퓸과 홈 컬렉션, 바디 컬렉션을 선보입니다.
+        </p>
+    </div>    <!-- //#main -->
+
+    <div id="think">
+        <h1>"르 라보는 생각합니다."</h1>
+        <div id="think_box">
+            <ul>
+                <li>향수병은 너무 많고 소울풀한 향기가 충분하지 않습니다.</li>
+                <li>향기는 만들어지는 의도와 그것이 준비된 주의에서 나온다고 생각합니다.</li>
+                <li class="on">고급 향수는 새로운 충격과 친숙한 사람들의 충격을 만들어 내야 합니다.</li>
+                <li>훌륭한 향수 제조법은 불경스러워야 한다고 생각합니다.</li>
+                <li>르라보는 비건 브랜드로, 동물 실험을 하지않습니다.</li>
+                <li>우리는 유명인이 정가를 지불해야 한다고 생각합니다.</li>
+                <li>명품 향수의 미래는 장인 정신에 있습니다.</li>
+                <li>손으로 직접 고른 장미, 부은 양초, 제작한 향수와 같은 손의 힘을 믿습니다.</li>
+                <li>우리 가까이에서 일하는 열정적인 영혼을 믿습니다.</li>
+                <li>우리는 Hafiz의 삶을 믿습니다. "항상 훌륭하게 행동하십시오."</li>
+                <li>Wabi-Sabi와 Thoreau의 몇 줄이 브랜드를 만들었습니다.</li>
+                <li>현대적인 도구를 치우고 길을 따라 장미 냄새를 맡을 여유를 가져야합니다.</li>
+                <li>우리는 우리가 한 번 젊을 뿐이라고 믿지만 영원히 미숙 할 수 있습니다.</li>
+                <li>설명이 예술을 죽인다고 믿습니다. 그러므로 이 모든 것을 잊어버리십시오!</li>
+            </ul>
+        </div>        <!-- //#think_box -->
+    </div>    <!-- //#think -->
+
+    <div id="service_bg">
+        <ul id="service" class="clearfix">
+            <li><img src="images/sub_service_01.jpg" alt="service_01"></li>
+            <li class="service">
+                <img src="images/sub_service_blank.jpg" alt="blank" class="mo_blank">
+                <div class="text">
+                    <h3><span>01</span>FRESH FORMULATION</h3>
+                    <p>
+                        르 라보 모든 제품의 향을 신선하게 핸드 블렌딩으로 제작합니다.
+                    </p>
+                </div>
+            </li>
+            <li class="service" id="blank"><span>blank</span></li>
+            <li class="service">
+                <img src="images/sub_service_blank.jpg" alt="blank" class="mo_blank">
+                <div class="text">
+                    <h3><span>02</span>PERSONALIZATION</h3>
+                    <p>
+                        고객님의 이름이나 원하는 문구를 넣은 맞춤 라벨링 서비스가 제공됩니다.
+                    </p>
+                </div>
+            </li>
+            <li><img src="images/sub_service_02.jpg" alt="service_02"></li>
+            <li><img src="images/sub_service_03.jpg" alt="service_03"></li>
+            <li><img src="images/sub_service_04.jpg" alt="service_04"></li>
+            <li class="service">
+                <img src="images/sub_service_blank.jpg" alt="blank" class="mo_blank">
+                <div class="text">
+                    <h3><span>03</span>REFILLS</h3>
+                    <p>
+                        전 세계 연구소에서 50ml, 100ml 또는 500ml 향수 제품 리필이 가능합니다.
+                    </p>
+                </div>
+            </li>
+            <li class="service">
+                <img src="images/sub_service_blank.jpg" alt="blank" class="mo_blank">
+                <div class="text">
+                    <h3><span>04</span>ENGRAVING</h3>
+                    <p>
+                        르라보 연구실 기술자들이 직접 제품에 라벨링 작업을 진행합니다.
+                    </p>
+                </div>
+            </li>
+        </ul>        <!-- //#service -->
+
+        <!-- mobile_service -->
+        <ul id="mo_service" class="clearfix">
+            <li><img src="images/sub_service_01.jpg" alt="service_01"></li>
+            <li class="service">
+                <img src="images/sub_service_blank.jpg" alt="blank" class="mo_blank">
+                <div class="text">
+                    <h3><span>01</span>FRESH FORMULATION</h3>
+                    <p>
+                        르 라보 모든 제품의 향을 신선하게 핸드 블렌딩으로 제작합니다.
+                    </p>
+                </div>
+            </li>
+            <li class="service">
+                <img src="images/sub_service_blank.jpg" alt="blank" class="mo_blank">
+                <div class="text">
+                    <h3><span>02</span>PERSONALIZATION</h3>
+                    <p>
+                        고객님의 이름이나 원하는 문구를 넣은 맞춤 라벨링 서비스가 제공됩니다.
+                    </p>
+                </div>
+            </li>
+            <li><img src="images/sub_service_02.jpg" alt="service_02"></li>
+            <li><img src="images/sub_service_03.jpg" alt="service_03"></li>
+            <li class="service">
+                <img src="images/sub_service_blank.jpg" alt="blank" class="mo_blank">
+                <div class="text">
+                    <h3><span>03</span>REFILLS</h3>
+                    <p>
+                        전 세계 연구소에서 50ml, 100ml 또는 500ml 향수 제품 리필이 가능합니다.
+                    </p>
+                </div>
+            </li>
+            <li class="service">
+                <img src="images/sub_service_blank.jpg" alt="blank" class="mo_blank">
+                <div class="text">
+                    <h3><span>04</span>ENGRAVING</h3>
+                    <p>
+                        르라보 연구실 기술자들이 직접 제품에 라벨링 작업을 진행합니다.
+                    </p>
+                </div>
+            </li>
+            <li><img src="images/sub_service_04.jpg" alt="service_04"></li>
+        </ul>        <!-- //#service -->
+    </div>    <!-- //#service_bg -->
+
+    <ul id="ingredients" class="clearfix">
+        <li>
+            <a href="product.html">
+                <div class="ingredients_text">
+                    <h3>SANDALWOOD</h3>
+                    <span class="name">샌달우드</span>
+                    <p>
+                        오스트레일리아에서 재배한 샌달우드를 증류시켜 만든 샌달우드 오일을 이용하여 향이 오래 지속되고 크리미하면서 드라이한 시그니처 우디향을 선사합니다. 
+                    </p>
+                    <span class="view">+ 관련 상품 보기</span>
+                </div>
+            </a>
+        </li>
+        <li class="ingredients_title">
+            <h2>INGREDIENTS</h2>
+            <p>
+                우리는 식물성 재료와 연구실에서 제조된 성분들을 공급하기 위해 폭넓은 조사를 하며, 반드시 효능과 안전성이 입증된 성분만을 사용합니다.
+            </p>
+            <span><a href="#">+ 자세히 보기</a></span>
+        </li>
+        <li>
+            <a href="product.html">
+                <div class="ingredients_text">
+                    <h3>ROSE CENTIFOLIA</h3>
+                    <span class="name">로즈 센티폴리아</span>
+                    <p>
+                        프랑스 그라스에서 5주간의 개화 기간동안 수확한 이 장미 추출물은 달콤한 둥글림과 미묘한 꿀 같은 노트로 깊고 포근한 향기를 선사합니다.
+                    </p>
+                    <span class="view">+ 관련 상품 보기</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="product.html">
+                <div class="ingredients_text">
+                    <h3>TONKA BEAN</h3>
+                    <span class="name">통카빈</span>
+                    <p>
+                        통카빈은 중남미에서 자란 디프테릭스 오도라타 나무 의 씨앗에서 추출 됩니다. 자연적으로 향기에 깊은 풍부함을 제공하는 매우 독특하고 따뜻한 아몬드와 바닐라 노트를 가지고 있습니다.
+                    </p>
+                    <span class="view">+ 관련 상품 보기</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="product.html">
+                <div class="ingredients_text">
+                    <h3>JUNIPER</h3>
+                    <span class="name">향나무</span>
+                    <p>
+                        주니퍼 오일 생산의 품질로 유명한 발칸 및 아드리아 해 산악 지역에서 수확됩니다. 가을에 상록 관목, 익은 열매 또는 바이에(baie)에서 채취 하여 신선한 우디 침엽수 향을 향기에 제공합니다.
+                    </p>
+                    <span class="view">+ 관련 상품 보기</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="product.html">
+                <div class="ingredients_text">
+                    <h3>PETITGRAIN</h3>
+                    <span class="name">페티그레인</span>
+                    <p>
+                        햇볕이 잘 드는 기후와 감귤 재배를 위한 최적의 조건으로 유명한 파라과이에서 재배됩니다. 페티그레인 에센셜 오일은 향기에 그린 플로럴, 비터 오렌지 노트를 더해줍니다.
+                    </p>
+                    <span class="view">+ 관련 상품 보기</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="product.html">
+                <div class="ingredients_text">
+                    <h3>BERGAMOTE</h3>
+                    <span class="name">베르가못</span>
+                    <p>
+                        이탈리아 칼라브리아 남부에서 자라는 특별한 감귤나무 열매의 껍질에서 나옵니다. 베르가못은 향을 밝게 해주는 상큼한 탑 노트를 선사합니다.
+                    </p>
+                    <span class="view">+ 관련 상품 보기</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="product.html">
+                <div class="ingredients_text">
+                    <h3>BLACK TEA LEAVES</h3>
+                    <span class="name">홍차잎</span>
+                    <p>
+                        스리랑카에서 재배한 동백나무의 말린 잎에서 추출한 홍차 잎은 향기에 깊이를 더하고 목질 건조를 돕는 달콤한 허브 노트로 풍부한 향기를 제공합니다.
+                    </p>
+                    <span class="view">+ 관련 상품 보기</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="product.html">
+                <div class="ingredients_text">
+                    <h3>NEROLI</h3>
+                    <span class="name">네롤리</span>
+                    <p>
+                        4월에 북아프리카의 농부들이 수확한 네롤리 에센셜 오일은 Bigaradier 나무의 섬세한 오렌지 꽃에서 증류됩니다. 꽃은 신선한 오렌지 꽃과 녹색 노트를 보존하기 위해 같은 날에 추출됩니다.
+                    </p>
+                    <span class="view">+ 관련 상품 보기</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="product.html">
+                <div class="ingredients_text">
+                    <h3>VANILLA PLANIFOLIA</h3>
+                    <span class="name">바닐라 플래니폴리아</span>
+                    <p>
+                        마다가스카의 농업 공동체에서 수확한 바닐라 플래니폴리아 과일 추출물은 향기에 달콤한 바닐린, 우디, 크리미한 향을 더합니다.
+                    </p>
+                    <span class="view">+ 관련 상품 보기</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="product.html">
+                <div class="ingredients_text">
+                    <h3>TUBEROSE</h3>
+                    <span class="name">튜베로즈</span>
+                    <p>
+                        튜베로즈 꽃은 인도에서 재배되고 손으로 수확되며, 꽃 봉오리와 꽃은 전통적으로 지역 의식에 사용되는 화환에 배열됩니다. 튜베로즈는 따뜻하고 강력하며 크리미한 화이트 플로럴 향을 더합니다.
+                    </p>
+                    <span class="view">+ 관련 상품 보기</span>
+                </div>
+            </a>
+        </li>
+    </ul>    <!-- //#ingredients -->
+
+    <!-- mobile_ingredients -->
+    <div id="mo_ingredients">
+        <div class="ingredients_title">
+            <h2>INGREDIENTS</h2>
+            <p>
+                우리는 식물성 재료와 연구실에서 제조된 성분들을 공급하기 위해 폭넓은 조사를 하며, 반드시 효능과 안전성이 입증된 성분만을 사용합니다.
+            </p>
+            <span><a href="#">+ 자세히 보기</a></span>
+        </div>        <!-- //.ingredients_title -->
+
+        <ul id="mo_list" class="clearfix">
+            <li class="list">
+                <p class="mo_name">
+                    <span>SANDALWOOD</span>
+                    <span>샌달우드</span>
+                </p>
+                <p class="click">
+                    <a href="product.html">
+                        샌달우드 오일을 이용하여 향이 오래 지속되고 크리미하면서 드라이한 시그니처 우디향을 선사합니다. 
+                        <span>+ 관련 상품 보기</span>
+                    </a>
+                </p>
+            </li>
+            <li class="list">
+                <p class="mo_name">
+                    <span>ROSE CENTIFOLIA</span>
+                    <span>로즈 센티폴리아</span>
+                </p>
+                <p class="click">
+                    <a href="product.html">
+                        장미 추출물은 달콤한 둥글림과 미묘한 꿀 같은 노트로 깊고 포근한 향기를 선사합니다.
+                        <span>+ 관련 상품 보기</span>
+                    </a>
+                </p>
+            </li>
+            <li class="list">
+                <p class="mo_name">
+                    <span>TONKA BEAN</span>
+                    <span>통카빈</span>
+                </p>
+                <p class="click">
+                    <a href="product.html" class="mo_text">
+                        자연적으로 향기에 깊은 풍부함을 제공하는 매우 독특하고 따뜻한 아몬드와 바닐라 노트를 가지고 있습니다.
+                        <span>+ 관련 상품 보기</span>
+                    </a>
+                </p>
+            </li>
+            <li class="list">
+                <p class="mo_name">
+                    <span>JUNIPER</span>
+                    <span>향나무</span>
+                </p>
+                <p class="click">
+                    <a href="product.html">
+                        가을에 상록 관목, 익은 열매 또는 바이에(baie)에서 채취 하여 신선한 우디 침엽수 향을 향기에 제공합니다.
+                        <span>+ 관련 상품 보기</span>
+                    </a>
+                </p>
+            </li>
+            <li class="list">
+                <p class="mo_name">
+                    <span>PETITGRAIN</span>
+                    <span>페티그레인</span>
+                </p>
+                <p class="click">
+                    <a href="product.html">
+                        페티그레인 에센셜 오일은 향기에 그린 플로럴, 비터 오렌지 노트를 더해줍니다.
+                        <span>+ 관련 상품 보기</span>
+                    </a>
+                </p>
+            </li>
+            <li class="list">
+                <p class="mo_name">
+                    <span>BERGAMOTE</span>
+                    <span>베르가못</span>
+                </p>
+                <p class="click">
+                    <a href="product.html">
+                        감귤나무 열매의 껍질인 베르가못은 향을 밝게 해주는 상큼한 탑 노트를 선사합니다.
+                        <span>+ 관련 상품 보기</span>
+                    </a>
+                </p>
+            </li>
+            <li class="list">
+                <p class="mo_name">
+                    <span>BLACK TEA LEAVES</span>
+                    <span>홍차잎</span>
+                </p>
+                <p class="click">
+                    <a href="product.html">
+                        홍차 잎은 향기에 깊이를 더하고 목질 건조를 돕는 달콤한 허브 노트로 풍부한 향기를 제공합니다.
+                        <span>+ 관련 상품 보기</span>
+                    </a>
+                </p>
+            </li>
+            <li class="list">
+                <p class="mo_name">
+                    <span>NEROLI</span>
+                    <span>네롤리</span>
+                </p>
+                <p class="click">
+                    <a href="product.html">
+                        신선한 오렌지 꽃과 녹색 노트를 보존하기 위해 같은 날에 추출된 것을 사용합니다.
+                        <span>+ 관련 상품 보기</span>
+                    </a>
+                </p>
+            </li>
+            <li class="list">
+                <p class="mo_name">
+                    <span>VANILLA PLANIFOLIA</span>
+                    <span>바닐라 플래니폴리아</span>
+                </p>
+                <p class="click">
+                    <a href="product.html">
+                        바닐라 플래니폴리아 과일 추출물은 향기에 달콤한 바닐린, 우디, 크리미한 향을 더합니다.
+                        <span>+ 관련 상품 보기</span>
+                    </a>
+                </p>
+            </li>   
+            <li class="list">
+                <p class="mo_name">
+                    <span>TUBEROSE</span>
+                    <span>튜베로즈</span>
+                </p>
+                <p class="click">
+                    <a href="product.html">
+                        튜베로즈는 따뜻하고 강력하며 크리미한 화이트 플로럴 향을 더합니다.
+                        <span>+ 관련 상품 보기</span>
+                    </a>
+                </p>
+            </li>
+        </ul>        <!-- //#mo_list -->
+    </div>    <!-- //#mo_ingredients -->
+
+    <footer>
+        <div id="footer" class="clearfix">
+            <div id="footer_logo">
+                <img src="images/logo.png" alt="footer_logo">
+            </div>
+            <div id="footer_content">
+                <ul id="footer_menu" class="clearfix">
+                    <li>
+                        <span>브랜드 소개</span>
+                        <ul>
+                           <li><a href="#">회사 소개</a></li>
+                           <li><a href="#">리필 프로그램</a></li>
+                           <li><a href="#">보도자료</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>클라이언트케어</span>
+                        <ul>
+                           <li><a href="#">문의하기</a></li>
+                           <li><a href="#">디퓨저 보증</a></li>
+                           <li><a href="#">개인 정보 정책</a></li>
+                           <li><a href="#">이용약관</a></li>
+                           <li><a href="#">판매약관</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>배 송</span>
+                        <ul>
+                           <li><a href="#">배송 및 취급</a></li>
+                           <li><a href="#">배송 옵션</a></li>
+                           <li><a href="#">클릭 및 수집</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>매 장</span>
+                        <ul>
+                           <li><a href="#">매장 찾기</a></li>
+                           <li><a href="#">매장 내 서비스</a></li>
+                        </ul>
+                    </li>
+                </ul>        <!-- //#footer_menu -->
+    
+                <div id="footer_news">
+                    <p>
+                        <span>뉴스레터 가입</span>
+                        가입시 귀하의 이메일 주소가 르 라보 제품, 이벤트 및 제안에 대한 마케팅 뉴스레터 및 정보를 보내는 것에 사용됨을 동의하는 것입니다. 각 뉴스레터의 구독 취소 링크를 클릭하면 언제든지 구독을 취소할 수 있습니다. 
+                    </p>
+                    <input type="email" name="email" id="email" placeholder="이메일 주소를 입력하세요." autocomplete="off">
+                </div>                <!-- //#newsletter -->
+            </div>            <!-- //#footer_content -->
+        </div>        <!-- //#footer -->
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+/* ===== #product_main ===== */
+#product_main{
+    position: relative;
+}
+#blank{
+    display: block;
+    width: 100%;
+    visibility: hidden;
+}
+#mainimg, #imgup, #titleup{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+#imgup, #titleup{
+    display: none;
+}
+
+/* ===== content text ===== */
+#content_text{
+    width: 80%;
+    margin: 7em auto ;
+    text-align: center;
+    font-size: 1.1em;
+}
+#content_text>h3{
+    color: #adadad;
+}
+#content_text>h1{
+    font-family: Bebas, sans-serif;
+    font-size: 4.5em;
+    line-height: 1.4em;
+    letter-spacing: 1px;
+}
+#content_text>h2{
+    font-size: 1.3em;
+    font-family: AppleB, sans-serif;
+    line-height: 1.4em;
+    margin-top: 20px;
+
+    opacity: 0;
+}
+#content_text>h2.move{
+    opacity: 1;
+
+    /* .move animation */
+    animation-name: upMove;
+    animation-duration: 400ms;
+    animation-timing-function: ease-out;
+}
+#content_text>p{
+    width: 60%;
+    margin: 30px auto 0 auto;
+    line-height: 2em;
+    text-align: justify;
+
+    opacity: 0;
+}
+#content_text>p.move{
+    opacity: 1;
+    
+    /* .move animation */
+    animation-name: upMove;
+    animation-duration: 800ms;
+    animation-timing-function: ease-out;
+}
+
+/* ====== #santal_tab ====== */
+#santal_tab{
+    width: 80%;
+    margin: 0 auto;
+}
+#santal_tabmenu{
+    width: 50%;
+    margin: 0 auto 50px auto;
+
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 2px;
+    font-size: 1.1em;
+}
+#santal_tabmenu>li{
+    float: left;
+    width: 50%;
+}
+#santal_tabmenu>li:hover{
+    cursor: pointer;
+}
+#santal_tabmenu>li:first-child::after{
+    content: "｜";
+    display: block;
+    float: right;
+    clear: both;
+    opacity: 0.4;
+    width: 1px;
+}
+.santal_content{
+    margin-bottom: 15em;
+
+    display: none;
+}
+.santal_content::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.santal_content>li{
+    float: left;
+    width: 24.25%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+.santal_content>li:nth-child(4n){
+    margin-right: 0;
+}
+.santal_content>li>a{
+    display: block;
+    width: 100%;
+    height: 24em;
+    overflow: hidden;
+}
+
+/* === .tab_content img === */
+#santal33>li:nth-child(1)>a{background: url(../images/santal33_01.jpg) no-repeat center / cover;}
+#santal33>li:nth-child(2)>a{background: url(../images/santal33_02.jpg) no-repeat center / cover;}
+#santal33>li:nth-child(3)>a{background: url(../images/santal33_03.jpg) no-repeat center / cover;}
+#santal33>li:nth-child(4)>a{background: url(../images/santal33_04.jpg) no-repeat center / cover;}
+#santal33>li:nth-child(5)>a{background: url(../images/santal33_05.jpg) no-repeat center / cover;}
+#santal33>li:nth-child(6)>a{background: url(../images/santal33_06.jpg) no-repeat center / cover;}
+#santal33>li:nth-child(7)>a{background: url(../images/santal33_07.jpg) no-repeat center / cover;}
+#santal33>li:nth-child(8)>a{background: url(../images/santal33_08.jpg) no-repeat center / cover;}
+#santal33>li:nth-child(9)>a{background: url(../images/santal33_09.jpg) no-repeat center / cover;}
+#santal33>li:nth-child(10)>a{background: url(../images/santal33_10.jpg) no-repeat center / cover;}
+#santal33>li:nth-child(11)>a{background: url(../images/santal33_11.jpg) no-repeat center / cover;}
+#santal33>li:nth-child(12)>a{background: url(../images/santal33_12.jpg) no-repeat center / cover;}
+
+#santal26>li:nth-child(1)>a{background: url(../images/santal26_01.jpg) no-repeat center / cover;}
+#santal26>li:nth-child(2)>a{background: url(../images/santal26_02.jpg) no-repeat center / cover;}
+#santal26>li:nth-child(3)>a{background: url(../images/santal26_03.jpg) no-repeat center / cover;}
+#santal26>li:nth-child(4)>a{background: url(../images/santal26_04.jpg) no-repeat center / cover;}
+#santal26>li:nth-child(5)>a{background: url(../images/santal26_05.jpg) no-repeat center / cover;}
+#santal26>li:nth-child(6)>a{background: url(../images/santal26_06.jpg) no-repeat center / cover;}
+#santal26>li:nth-child(7)>a{background: url(../images/santal26_07.jpg) no-repeat center / cover;}
+#santal26>li:nth-child(8)>a{background: url(../images/santal26_08.jpg) no-repeat center / cover;}
+#santal26>li:nth-child(9)>a{background: url(../images/santal26_09.jpg) no-repeat center / cover;}
+#santal26>li:nth-child(10)>a{background: url(../images/santal26_10.jpg) no-repeat center / cover;}
+
+.santal_content>li>a>img{
+    position: relative;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;;
+
+    transition-duration: 200ms;
+    opacity: 0;
+}
+.santal_content>li>a:hover>img{
+    opacity: 1;
+}
+.santal_text{
+    width: 100%;
+    padding: 1em 0.5em 2em 0.5em;
+    box-sizing: border-box;
+    line-height: 1.8em;
+}
+.santal_content a{
+    display: block;
+}
+.santal_text span{
+    display: block;
+}
+.name{
+    font-family: AppleB, sans-serif;
+    font-size: 1.2em;
+}
+.size{
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+.price{
+    text-align: right;
+    font-size: 1.2em;
+}
+
+/* ===== .on tab ===== */
+#santal_tabmenu>li.on::before{
+    content: "·";
+    display: block;
+    line-height: 0px;
+    clear: both;
+    font-size: 2.5em;
+}
+.santal_content.on{
+    display: block;
+
+    animation-name: rightMove;
+    animation-duration: 400ms;
+    animation-timing-function: ease-out;
+}

@@ -1,0 +1,231 @@
+/* === font === */
+@font-face {
+    font-family: Bebas;
+    src: url('../../font/BebasNeue-Regular.woff');
+  }
+@font-face {
+    font-family: AppleM;
+    src: url('../../font/AppleSDGothicNeoM.woff');
+  }
+@font-face {
+    font-family: AppleB;
+    src: url('../../font/AppleSDGothicNeoB.woff');
+  }
+@font-face {
+    font-family: AppleL;
+    src: url('../../font/AppleSDGothicNeoL.woff');
+  }
+
+body{ 
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: AppleM, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.button{
+    border: none;
+    outline: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ===== notice ===== */
+#notice{
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border-style: solid none;
+}
+#notice>div{
+    width: 600px;
+    margin: 0 auto;
+}
+#notice_container{
+    float: left;
+    width: 500px;
+    height: 30px;
+
+    overflow: hidden;
+}
+#notice_container>ul{
+    width: 300%;
+    line-height: 30px;
+    font-size: 0.9em;
+    text-align: center;
+}
+#notice_container>ul>li{
+    float: left;
+    width: 33.333%;
+}
+#notice_container a{
+    color: #fff;
+}
+#notice>div>button{
+    float: left;
+    width: 50px;
+    height: 30px;
+}
+#notice>div>button:hover{
+    opacity: 0.5;
+    transition-duration: 100ms;
+}
+#prev{
+    background: url("../images/notice_prev.png") no-repeat;
+    background-size: 8px;
+    background-position: left;
+}
+#next{
+    background: url("../images/notice_next.png") no-repeat;
+    background-size: 8px;
+    background-position: right;
+}
+#notice>div>button>span{
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+/* ===== nav ===== */
+#nav{
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    font-family: 'Noto Serif KR', serif;
+    
+    min-width: 1200px;
+}
+#nav ul{
+    float: left;
+    width: 35%;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 35px;
+}
+#nav li{
+    float: left;
+    width: 33.333%;
+}
+#logo{
+    float: left;
+    width: 20%;
+    margin: 0 5%;
+}
+#nav_right>li:last-child a{
+    float: left;
+    width: 50%;
+    display: block;
+    font-family: AppleM, sans-serif;
+    line-height: 33px;
+    font-size: 0.8em;
+}
+#nav_right>li:last-child>a:first-child::after{
+    display: block;
+    content: "｜";
+    float: right;
+    clear: both;
+}
+#logo>a{
+    display: block;
+    height: 100px;
+    background: url("../images/logo.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+#logo>a>span{
+    display: none;
+}
+
+
+/* === insta === */
+.insta{
+    position: fixed;
+    width: 100px;
+    right: 2em;
+    bottom: 1em;
+
+    z-index: 10;
+
+    animation-name: updown;
+    animation-duration: 1500ms;
+    animation-iteration-count: 3;
+    animation-play-state: running;
+}
+@keyframes updown{
+    from{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.insta>a>img{
+    width: 100%;
+}
+
+/* ===== footer ===== */
+footer{
+    background-color: #222;
+    color: #fff;
+    line-height: 2em;
+    font-size: 0.9em;
+    font-family: AppleL,sans-serif;
+    padding: 50px 0;
+}
+footer a{
+    color: rgba(100, 100, 100, 0.9);
+    text-decoration: underline;
+    font-family: AppleM, sans-serif;
+}
+#footer{
+    width: 1200px;
+    margin: 0 auto;
+}
+#footer p{
+    float: left;
+}
+#footer>p:first-child{
+    width: 15%;
+    margin-top: 82px;
+    font-family: AppleB, sans-serif;
+    font-size: 1em;
+}
+#footer>p:nth-child(2){
+    width: 35%;
+}
+#footer>p:nth-child(3){
+    width: 30%;
+}
+#footer>p:last-child{
+    width: 20%;
+    text-align: right;
+}
+#footer>p:last-child>a{
+    display: block;
+    font-size: 0.9em;
+    line-height: 1.7em;
+}
+#footer>p:last-child>span{
+    display: block;
+    margin-top: 60px;
+    color: rgba(100, 100, 100, 0.9);
+    font-family: AppleB, sans-serif;
+}

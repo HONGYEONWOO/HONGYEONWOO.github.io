@@ -1,0 +1,186 @@
+/* 1200 이하 중간 정도*/
+@media screen and (max-width:1200px){
+    body{
+        font-size: 14px;
+    }
+    #notice>div, #about_03, #content_text>p, #santal_tabmenu{
+        width: 80%;
+    }
+    #logo{
+        min-width: 140px;
+        margin-left: 3%;
+    }
+    #menu, #user, #footer_menu>li>ul{
+        display: none;
+    }
+    #mobile{
+        display: block;
+    }
+    #tabmenu{
+        width: 90%;
+    }
+    .tab_content>img{
+        width: 50%;
+    }
+    .tab_text{
+        width: 45%;
+        padding-top: 1em;
+
+        font-size: 0.9em;
+    }
+    #best_img{
+        float: none;
+        width: 45.7em;
+        margin: 5% auto;
+    }
+    #best_img>li>img{
+        width: 14em;
+    }
+    #best_text{
+        float: none;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #footer_menu, #footer_news{
+        width: 100%;
+        text-align: center;
+    }
+    #footer_news>p>span {
+        margin-bottom: 0.5em;
+    }
+    #footer_news{
+        border-top: 1px solid rgba(100, 100, 100, 0.9);
+        padding-top: 1.5em;
+    }
+
+    /* 서브페이지 about */
+    #sub_main{
+        height: 40vh;
+    }
+    .text h3{
+        font-size: 2em;
+    }
+    .text p{
+        font-size: 1em;
+        line-height: 1.6em;
+    }
+    #think>h1,#think_box{
+        opacity: 1;
+    }
+
+    /* 서브페이지 product */
+    .santal_content>li{
+        width: 32.666%;
+    }
+    .santal_content>li:nth-child(4n){
+        margin-right: 1%;
+    }
+    .santal_content>li:nth-child(3n){
+        margin-right: 0;
+    }
+    .santal_content>li>a{
+        height: 22em;
+    }
+
+}
+
+/* 760 이하 제일 작을때*/
+@media screen and (max-width:760px){
+    body{
+        font-size: 12px;
+    }
+    #notice{
+        height: 5vh;
+        font-size: 0.9em;
+    }
+    #main{
+        width: 100%;
+        height: 95vh;
+    }
+    #about_01{
+        width: 60%;
+        font-size: 0.9em;
+    }
+    #about_01 img{
+        max-width: 150px;
+    }
+    .tab_content>img, .tab_text, #footer_content{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .tab_text{
+        padding-top: 3em;
+        font-size: 1em;
+
+        text-align: center;
+    }
+    #about_03>h2{
+        font-size: 1.6em;
+    }
+    #best_img{
+        width: 36.8em;
+    }
+    #best_img>li>img{
+        width: 11em;
+    }
+    #footer_logo{
+        float: none;
+        width: 50%;
+        margin: 0 auto 2em auto;
+    }
+    #footer_logo>img{
+        margin: 0 auto;
+    }
+
+    /* 서브페이지 about */
+    #think_box{
+        font-size: 0.8em;
+
+        height: 175px;
+    }
+    #think>h1{
+        font-size: 2.2em;
+    }
+    #think_box>ul>li{
+        line-height: 35px;
+        height: 35px;
+    }
+    #think_box>ul>li.on{
+        font-size: 1.3em;
+    }
+    #service, #ingredients{
+        display: none;
+    }
+    #mo_service, #mo_ingredients{
+        display: block;
+    }
+
+    /* 서브페이지 product */
+    #blank, #mainimg, #imgup{
+        width: auto;
+        height: 50vh;
+    }
+    #titleup{
+        visibility: hidden;
+    }
+    #content_text>h2{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #content_text>p{
+        width: 100%;
+    }
+    .santal_content>li{
+        width: 49.5%;
+    }
+    .santal_content>li:nth-child(4n), .santal_content>li:nth-child(3n){
+        margin-right: 1%;
+    }
+    .santal_content>li:nth-child(even){
+        margin-right: 0;
+    }
+    .santal_content>li>a{
+        height: 20em;
+    }
+    
+}

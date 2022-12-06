@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le labo</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main_style.css">
+    <link rel="stylesheet" href="css/mobile_style.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/main_script.js"></script>
+</head>
+<body>
+    <div id="notice">
+        <div class="clearfix">
+            <button id="notice_prev" class="button"><span>prev</span></button>
+            <div id="notice_container">
+                <ul class="clearfix">
+                    <li><a href="#">향수를 구매하시는 모든 분들에게 라벨링 서비스가 제공됩니다.</a></li>
+                    <li><a href="#">안전 조치 및 주문량 증가로 인해 온라인 주문이 지연될 수 있습니다.</a></li>
+                    <li><a href="#">100,000원 이상 구매시 무료 배송이 제공됩니다.</a></li>
+                </ul>
+            </div>
+            <button id="notice_next" class="button"><span>next</span></button>
+        </div>
+    </div>    <!-- //#notice -->
+
+    <div id="main" class="clearfix">
+        <nav id="nav">
+            <div id="logo">
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+
+            <ul id="menu" class="clearfix">
+                <li>향수</li>
+                <li>홈</a></li>
+                <li>바디케어</a></li>
+                <li><a href="#skin">스타일링</a></li>
+                <li><a href="#gift">기프트</a></li>
+                <li>여행제품</a></li>
+                <li>르라보소개</a></li>
+            </ul>        <!-- //#menu -->
+
+            <ul id="user" class="clearfix">
+                <li><a href="#login">로그인</a></li>
+                <li><a href="#mypage">마이페이지</a></li>
+            </ul>        <!-- //#user -->
+
+            <!-- mobile -->
+            <div id="mobile" class="clearfix">
+                <ul id="mo_icon" class="clearfix">
+                    <li><a href="#login"><span>로그인</span></a></li>
+                    <li><a href="#login"><span>마이페이지</span></a></li>
+                    <li id="mo_menuicon"><span>서브메뉴</span></li>
+                </ul>            <!-- //#mo_icon -->
+
+                <div id="mo_show" class="clearfix">
+                    <div id="mo_hide"><span>close</span></div>
+                    <ul id="mo_menu">
+                        <li>
+                            <h5 class="mo_title">향수</h5>
+                            <ul class="mo_submenu">
+                                <li><a href="product.html">클래식 컬렉션</a></li>
+                                <li><a href="product.html">오 드 퍼퓸</a></li>
+                                <li><a href="product.html">견본 샘플</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mo_title">홈</h5>
+                            <ul class="mo_submenu">
+                                <li><a href="product.html">클래식 캔들</a></li>
+                                <li><a href="product.html">홈 향수</a></li>
+                                <li><a href="product.html">콘크리트 양초</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mo_title">바디케어</h5>
+                            <ul class="mo_submenu">
+                                <li><a href="product.html">바디</a></li>
+                                <li><a href="product.html">헤어</a></li>
+                                <li><a href="product.html">페이스</a></li>
+                                <li><a href="product.html">향기 별</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mo_title">
+                                <a href="product.html">스타일링</a>
+                            </h5>
+                        </li>
+                        <li>
+                            <h5 class="mo_title">
+                                <a href="#gift">기프트</a>
+                            </h5>
+                        </li>
+                        <li>
+                            <h5 class="mo_title">여행제품</h5>
+                            <ul class="mo_submenu">
+                                <li><a href="product.html">여행용 튜브</a></li>
+                                <li><a href="product.html">여행용 세트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mo_title">르라보소개</h5>
+                            <ul class="mo_submenu">
+                                <li><a href="about.html">르라보 소개</a></li>
+                                <li><a href="#">향 추천</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">로그인</a>
+                            <a href="#">회원가입</a>
+                            <a href="#">고객센터</a>
+                        </li>
+                    </ul>            <!-- //#mo_menu -->
+                </div>
+            </div>            <!-- //#mobile -->
+        </nav>        <!-- //#nav -->
+
+        <div id="dropdown">
+            <div id="dropdown_box" class="clearfix">
+                <ul>
+                    <li><a href="product.html">클래식 컬렉션</a></li>
+                    <li><a href="product.html">오 드 퍼퓸</a></li>
+                    <li><a href="product.html">견본 샘플</a></li>
+                </ul>
+                <ul>
+                    <li><a href="product.html">클래식 캔들</a></li>
+                    <li><a href="product.html">홈 향수</a></li>
+                    <li><a href="product.html">콘크리트 양초</a></li>
+                </ul>
+                <ul>
+                    <li><a href="product.html">바디</a></li>
+                    <li><a href="product.html">헤어</a></li>
+                    <li><a href="product.html">페이스</a></li>
+                    <li><a href="product.html">향기 별</a></li>
+                </ul>
+                <ul class="blank"><li>blank</li></ul>
+                <ul class="blank"><li>blank</li></ul>
+                <ul>
+                    <li><a href="product.html">여행용 튜브</a></li>
+                    <li><a href="product.html">여행용 세트</a></li>
+                </ul>
+                <ul>
+                    <li><a href="about.html">르라보 소개</a></li>
+                    <li><a href="#">향 추천</a></li>
+                </ul>
+            </div>        <!-- //#dropdown_box -->
+        </div>        <!-- //#dropdown -->
+
+        <!-- 메인 텍스트 -->
+        <div id="main_text" class="move">
+            <h2>PERSONAL LABELING</h2>
+            <p>
+                향수를 구매하시는 모든 분들에게 원하시는<br>문구를 본품 및 박스 라벨에 새겨드립니다.
+                <span>원하시는 문구를 메모란(배송 시 유의사항)에 기재 부탁드립니다.</span>
+            </p>
+            <button class="more button">
+                <a href="about.html"><span>자세히보기</span></a>
+            </button>
+        </div>        <!-- //#main_text -->
+    </div>    <!-- //#main -->
+
+    <div id="about_01">
+        <img src="images/logo_bk.png" alt="logo">
+        <p>
+            <b>장인정신</b>과 <b>자유로운 감성</b>을 담은 브랜드로, 르 라보의 프레쉬한 퍼퓸 컬렉션을 <b>퍼스널 라벨링</b>을 통해 <b>나만의 맞춤형</b> 르 라보 제품을 만나보세요.
+        </p>
+    </div>    <!-- //#about_01 -->
+
+    <div id="fix_img">
+        <span>background</span>
+    </div>
+
+    <div id="tab">
+        <ul id="tabmenu" class="clearfix">
+            <li class="on" data-target="#tab_perfume">향수</li>
+            <li data-target="#tab_home">홈</li>
+            <li data-target="#tab_body">바디케어</li>
+            <li data-target="#tab_styling">스타일링</li>
+        </ul>
+
+        <div id="tab_perfume" class="tab_content on">
+            <img src="images/tab_perfume.jpg" alt="tab_perfume">
+            <div class="tab_text">
+                <span>CLASSIC COLLECTION</span>
+                <h3>SANTAL 33</h3>
+                <p>
+                    <b>말보로 맨에서 영감을 받아 탄생한 센슈얼하고 스모키한 머스크향</b>
+                    <span>
+                        타오르는 모닥불과 스모키하게 날리는 연기, 빛이 사라지고 난 이후에 느껴지는 센슈얼한 무드. 상탈 33은 전설적인 말보로 맨에서 영감을 받은 센슈얼한 향수입니다. 카다멈, 아이리스, 바이올렛, 암브록스에 스모키한 우드 향이 어우러져 스파이시하고, 가죽 향이 맴도는 머스크 노트를 완성합니다.
+                    </span>
+                    <a href="product.html" class="tab_more"><span>+ 자세히 보기</span></a>
+                </p>
+            </div>            <!-- //.tab_text -->
+        </div>        <!-- //#tab_perfume -->
+        
+        <div id="tab_home" class="tab_content">
+            <img src="images/tab_candle.jpg" alt="tab_home">
+            <div class="tab_text">
+                <span>CLASSIC CANDLE</span>
+                <h3>ENCENS 9</h2>
+                <p>
+                    <b>인센스의 신비로운 기운과 스모키하고 우디한 노트의 캔들</b>
+                    <span>
+                        향의 가장 오래된 원료이자 그 자체로 신비로운 기운을 지닌 인센스. 이 특별한 원료는 스모키하고 우디한 노트와 어우러져 평화로운 기운을 가득 퍼뜨리고, 새로운 에너지를 위한 무한한 영감을 줍니다. 르 라보의 감성을 담은 향으로 공간을 따스하게 채워보세요. 모던한 글래스 용기에 담겨 있으며, 약 60시간 연소 가능합니다.
+                    </span>
+                    <a href="product.html" class="tab_more"><span>+ 자세히 보기</span></a>
+                </p>
+            </div>            <!-- //.tab_text -->
+        </div>        <!-- //#tab_home -->
+
+        <div id="tab_body" class="tab_content">
+            <img src="images/tab_body.jpg" alt="tab_body">
+            <div class="tab_text">
+                <span>HAND SOAP</span>
+                <h3>BASIL</h3>
+                <p>
+                    <b>풍부한 질감의 리퀴드 핸드 솝</b>
+                    <span>
+                        비타민 나무(항산화 작용)와 로즈마리 잎(피부 진정), 사탕 수수(클렌징)를 함유한 포뮬라로, 인공 색소를 넣지 않았습니다. 감각을 일깨우는 풍성한 바질 향을 느낄 수 있습니다. 여기에 버베나의 시트러스한 향이 어우러져 더욱 산뜻한 느낌을 선사합니다. 사용이 편리한 펌핑 용기입니다.
+                    </span>
+                    <a href="product.html" class="tab_more"><span>+ 자세히 보기</span></a>
+                </p>
+            </div>            <!-- //.tab_text -->
+        </div>        <!-- //#tab_body -->
+
+        <div id="tab_styling" class="tab_content">
+            <img src="images/tab_styling.jpg" alt="tab_styling">
+            <div class="tab_text">
+                <span>PERFUMING BODY LOTION</span>
+                <h3>LYS 41</h3>
+                <p>
+                    <b>화이트 플라워들이 어우러진 중독적인 플로럴 향</b>
+                    <span>
+                        리스 41은 풍성하게 넘치는 화이트 플라워들의 향입니다. 자스민, 튜베로즈 앱솔루트, 릴리의 우아하면서도 따뜻한 향이 마법처럼 펼쳐집니다. 우아한 우드향, 마다가스카 바닐라와 머스크가 더해져 한 번 빠지면 헤어나올 수 없는 매력에 사로잡힙니다. 중독적인 플로럴 향으로 매력적인 잔향의 여운을 남겨 당신의 주위를 맴돌게 할 것 입니다.
+                    </span>
+                    <a href="product.html" class="tab_more"><span>+ 자세히 보기</span></a>
+                </p>
+            </div>            <!-- //.tab_text -->
+        </div>        <!-- //#tav_styling -->
+    </div>    <!-- //#tab -->
+
+    <div id="about_02">
+        <div class="move">
+            <h3>“우리는 우리가 좋아하는 다른 분야나 미학,<br>혹은 철학과 제품에서 영향을 받습니다.”</h3>
+            <p>
+                와비사비(wabi-sabi) 정신은 불완전하고 영원하지 않으며<br>미완성인 것들의 아름다움에 대해서 얘기하는 철학이며,<br>르 라보가 하는 모든 것들은 이 와비사비 정신의 영향을 받습니다.
+            </p>
+
+            <ul id="circle" class="clearfix">
+                <li><span class="number">2006</span><span>2006년 미국 뉴욕에서<br>르 라보 런칭</span></li>
+                <li><span class="number">17</span><span>17가지의<br>클래식 컬렉션 향수</span></li>
+                <li><span class="number">23</span><span>맞춤 라벨링 서비스에 들어<br>가는 글자의 최대 숫자</span></li>
+            </ul>
+        </div>
+    </div>    <!-- //#about_02 -->
+
+    <div id="about_03">
+        <h2>2006년 뉴욕에서 탄생한 핸드 메이드 퍼퓸 하우스</h2>
+        <p>
+            르 라보는 향수를 만드는 실험실을 테마로 하며, 핸드메이드 퍼퓸과 홈 컬렉션, 바디 컬렉션을 선보입니다. 르 라보의 퍼퓸 컬렉션은 재능 있고 독창적인 조향사들과의 작업으로 만들어집니다. 장인정신과 자유로운 감성을 담은 브랜드 르 라보의 프레쉬한 퍼퓸 컬렉션을 고객 맞춤 라벨링을 통해 나만의 맞춤형 르 라보 제품을 만나보세요.
+        </p>
+        <button class="more button">
+            <a href="about.html"><span>자세히보기</span></a>
+        </button>
+    </div>    <!-- //#about_03 -->
+
+    <div id="graybox">
+        <div id="best" class="clearfix">
+            <div id="best_text">
+                <h2>BEST</h2>
+                <p>
+                    많은 고객님들이 선택해 주신 금주<br>르라보 베스트셀러 상품 입니다.
+                </p>
+                <ul>
+                    <li class="on"><a href="product.html"><span>0 1</span><span>EAU DE PARFUM</span></a></li>
+                    <li><a href="product.html"><span>0 2</span><span>HAND POMADE</span></a></li>
+                    <li><a href="product.html"><span>0 3</span><span>CLASSIC CANDLE</span></a></li>
+                </ul>
+            </div>
+            <ul id="best_img" class="clearfix">
+                <li class="on"><img src="images/best_01.jpg" alt="best_01"></li>
+                <li><img src="images/best_02.jpg" alt="best_02"></li>
+                <li><img src="images/best_03.jpg" alt="best_03"></li>
+            </ul>
+        </div>    <!-- //#best -->
+    </div>    <!-- //#graybox -->
+
+    <footer>
+        <div id="footer" class="clearfix">
+            <div id="footer_logo">
+                <img src="images/logo.png" alt="footer_logo">
+            </div>
+            <div id="footer_content">
+                <ul id="footer_menu" class="clearfix">
+                    <li>
+                        <span>브랜드 소개</span>
+                        <ul>
+                           <li><a href="#">회사 소개</a></li>
+                           <li><a href="#">리필 프로그램</a></li>
+                           <li><a href="#">보도자료</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>클라이언트 케어</span>
+                        <ul>
+                           <li><a href="#">문의하기</a></li>
+                           <li><a href="#">디퓨저 보증</a></li>
+                           <li><a href="#">개인 정보 정책</a></li>
+                           <li><a href="#">이용약관</a></li>
+                           <li><a href="#">판매약관</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>배 송</span>
+                        <ul>
+                           <li><a href="#">배송 및 취급</a></li>
+                           <li><a href="#">배송 옵션</a></li>
+                           <li><a href="#">클릭 및 수집</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>매 장</span>
+                        <ul>
+                           <li><a href="#">매장 찾기</a></li>
+                           <li><a href="#">매장 내 서비스</a></li>
+                        </ul>
+                    </li>
+                </ul>        <!-- //#footer_menu -->
+    
+                <div id="footer_news">
+                    <p>
+                        <span>뉴스레터 가입</span>
+                        가입시 귀하의 이메일 주소가 르 라보 제품, 이벤트 및 제안에 대한 마케팅 뉴스레터 및 정보를 보내는 것에 사용됨을 동의하는 것입니다. 각 뉴스레터의 구독 취소 링크를 클릭하면 언제든지 구독을 취소할 수 있습니다. 
+                    </p>
+                    <input type="email" name="email" id="email" placeholder="이메일 주소를 입력하세요." autocomplete="off">
+                </div>        <!-- //#newsletter -->
+            </div>            <!-- //#footer_content -->
+        </div>        <!-- //#footer -->
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+/* === font === */
+@font-face {
+    font-family: Bebas;
+    src: url('../../font/BebasNeue-Regular.woff');
+  }
+@font-face {
+    font-family: AppleM;
+    src: url('../../font/AppleSDGothicNeoM.woff');
+  }
+@font-face {
+    font-family: AppleB;
+    src: url('../../font/AppleSDGothicNeoB.woff');
+  }
+@font-face {
+    font-family: AppleL;
+    src: url('../../font/AppleSDGothicNeoL.woff');
+  }
+@font-face {
+    font-family: Claster;
+    src: url('../../font/Claster\ Oleander.woff');
+  }
+
+  body{
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: AppleM, sans-serif;
+}
+
+/* === 초기화 === */
+a{
+    text-decoration: none;
+    color: #333;
+}
+.button{
+    border: none;
+    outline: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 공지사항 */
+#notice{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 50px;
+    background-color: #000;
+    z-index: 100;
+}
+#notice>ul{
+    width: 2800px;
+    margin: 0 auto;
+
+    animation-name: move;
+    animation-duration: 20s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear; 
+}
+
+@keyframes move{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+
+#notice>ul>li{
+    float: left;
+    width: 700px;
+    line-height: 50px;
+    font-size: 0.9em;
+    text-align: center;
+}
+#notice>ul>li>a{
+    color: #fff;
+}
+
+/* ===== 상단 로고 ===== */
+#logo{
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    z-index: 100;
+}
+#logo>a>img{
+    display: block;
+    width: 120px;
+
+    animation-name: effect;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+/* 로고 애니메이션 */
+@keyframes effect{
+from{
+    transform: rotate(0deg);
+}
+to{
+    transform: rotate(360deg);
+}
+}
+
+/* ===== 상단 네비게이션 ===== */
+#nav{
+    position: absolute;
+    top: 80px;
+    right: 50px;
+
+    width: 200px;
+    font-family: Bebas, sans-serif;
+    text-align: right;
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    z-index: 100;
+}
+#nav>li{
+    float: left;
+    width: 100%;
+}
+#nav>li:hover{
+    cursor: pointer;
+}
+#nav>li span{
+    position: relative;
+    line-height: 1.5em;
+    color: #000;
+}
+#nav>li span::after{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    transition-duration: 200ms;
+}
+#nav>li:hover span::after{
+    width: 80%;
+}
+
+/* ===== 세부메뉴 ===== */
+.navslide{
+    display: none;
+    margin-bottom: 0.5em;
+}
+.navslide>li>a{
+    color: #000;
+    opacity: 0.6;
+    font-size: 0.9em;
+}
+.navslide>li:hover>a{
+    opacity: 1;
+    transition-duration: 100ms;
+}
+
+/* ===== top ===== */
+.top{
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+
+    background: url("../images/up.png") no-repeat;
+    background-size: contain;
+}
+.black{
+    background: url("../images/up_bk.png") no-repeat;
+    background-size: contain;
+}
+.top>span{
+    display: none;
+}
+
+/* ===== footer ====== */
+footer{
+    background-color: #eee;
+    height: 200px;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+#footer{
+    width: 70%;
+    margin: 0 auto;
+    min-width: 1200px;
+    color: #707070;
+}
+#footer>p{
+    float: left;
+    width: 20%;
+    line-height: 100px;
+    font-family: AppleB, sans-serif;
+}
+#footer>div{
+    float: left;
+    width: 80%;
+    font-size: 0.9em;
+    line-height: 2em;
+}
+#footer>div>p:first-child{
+    margin-bottom: 20px;
+}
+#footer a{
+    font-family: AppleB, sans-serif;
+    text-decoration: underline;
+    color: #707070;
+}

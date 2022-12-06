@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le labo santal</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product_style.css">
+    <link rel="stylesheet" href="css/mobile_style.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/product_script.js"></script>
+</head>
+<body>
+    <div id="notice">
+        <div class="clearfix">
+            <button id="notice_prev" class="button"><span>prev</span></button>
+            <div id="notice_container">
+                <ul class="clearfix">
+                    <li><a href="#">향수를 구매하시는 모든 분들에게 라벨링 서비스가 제공됩니다.</a></li>
+                    <li><a href="#">안전 조치 및 주문량 증가로 인해 온라인 주문이 지연될 수 있습니다.</a></li>
+                    <li><a href="#">100,000원 이상 구매시 무료 배송이 제공됩니다.</a></li>
+                </ul>
+            </div>
+            <button id="notice_next" class="button"><span>next</span></button>
+        </div>
+    </div>    <!-- //#notice -->
+
+    <div id="product_main" class="clearfix">
+        <!-- 메뉴 -->
+        <nav id="nav">
+            <div id="logo">
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+
+            <!-- 웹 메뉴 -->
+            <ul id="menu" class="clearfix">
+                <li>향수</li>
+                <li>홈</a></li>
+                <li>바디케어</a></li>
+                <li><a href="#skin">스타일링</a></li>
+                <li><a href="#gift">기프트</a></li>
+                <li>여행제품</a></li>
+                <li>르라보소개</a></li>
+            </ul>        <!-- //#menu -->
+
+            <ul id="user" class="clearfix">
+                <li><a href="#login">로그인</a></li>
+                <li><a href="#mypage">마이페이지</a></li>
+            </ul>        <!-- //#user -->
+
+            <!-- 모바일 메뉴 -->
+            <div id="mobile">
+                <ul id="mo_icon" class="clearfix">
+                    <li><a href="#login"><span>로그인</span></a></li>
+                    <li><a href="#login"><span>마이페이지</span></a></li>
+                    <li id="mo_menuicon"><span>서브메뉴</span></li>
+                </ul>            <!-- //#mo_icon -->
+
+                <div id="mo_show" class="clearfix">
+                    <div id="mo_hide"><span>close</span></div>
+                    <ul id="mo_menu">
+                        <li>
+                            <h5 class="mo_title">향수</h5>
+                            <ul class="mo_submenu">
+                                <li><a href="product.html">클래식 컬렉션</a></li>
+                                <li><a href="product.html">오 드 퍼퓸</a></li>
+                                <li><a href="product.html">견본 샘플</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mo_title">홈</h5>
+                            <ul class="mo_submenu">
+                                <li><a href="product.html">클래식 캔들</a></li>
+                                <li><a href="product.html">홈 향수</a></li>
+                                <li><a href="product.html">콘크리트 양초</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mo_title">바디케어</h5>
+                            <ul class="mo_submenu">
+                                <li><a href="product.html">바디</a></li>
+                                <li><a href="product.html">헤어</a></li>
+                                <li><a href="product.html">페이스</a></li>
+                                <li><a href="product.html">향기 별</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mo_title">
+                                <a href="product.html">스타일링</a>
+                            </h5>
+                        </li>
+                        <li>
+                            <h5 class="mo_title">
+                                <a href="#gift">기프트</a>
+                            </h5>
+                        </li>
+                        <li>
+                            <h5 class="mo_title">여행제품</h5>
+                            <ul class="mo_submenu">
+                                <li><a href="product.html">여행용 튜브</a></li>
+                                <li><a href="product.html">여행용 세트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mo_title">르라보소개</h5>
+                            <ul class="mo_submenu">
+                                <li><a href="about.html">르라보 소개</a></li>
+                                <li><a href="#">향 추천</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">로그인</a>
+                            <a href="#">회원가입</a>
+                            <a href="#">고객센터</a>
+                        </li>
+                    </ul>            <!-- //#mo_menu -->
+                </div>
+            </div>            <!-- //#mobile -->
+        </nav>        <!-- //#nav -->
+
+        <div id="dropdown">
+            <div id="dropdown_box" class="clearfix">
+                <ul>
+                    <li><a href="product.html">클래식 컬렉션</a></li>
+                    <li><a href="product.html">오 드 퍼퓸</a></li>
+                    <li><a href="product.html">견본 샘플</a></li>
+                </ul>
+                <ul>
+                    <li><a href="product.html">클래식 캔들</a></li>
+                    <li><a href="product.html">홈 향수</a></li>
+                    <li><a href="product.html">콘크리트 양초</a></li>
+                </ul>
+                <ul>
+                    <li><a href="product.html">바디</a></li>
+                    <li><a href="product.html">헤어</a></li>
+                    <li><a href="product.html">페이스</a></li>
+                    <li><a href="product.html">향기 별</a></li>
+                </ul>
+                <ul class="blank"><li>blank</li></ul>
+                <ul class="blank"><li>blank</li></ul>
+                <ul>
+                    <li><a href="product.html">여행용 튜브</a></li>
+                    <li><a href="product.html">여행용 세트</a></li>
+                </ul>
+                <ul>
+                    <li><a href="about.html">르라보 소개</a></li>
+                    <li><a href="#">향 추천</a></li>
+                </ul>
+            </div>        <!-- //#dropdown_box -->
+        </div>        <!-- //#dropdown -->
+
+        <div>
+            <!-- 메인 이미지 -->
+            <img src="images/sub_main_02.jpg" alt="main" id="blank">
+            <img src="images/sub_main_02.jpg" alt="main" id="mainimg">
+            <img src="images/sub_titleup.png" alt="popup_title" id="titleup">
+            <img src="images/sub_imgup.png" alt="popup_img" id="imgup">
+        </div>
+    </div>    <!-- //#main -->
+    
+    <div id="content_text">
+        <h3>CLASSIC COLLECTION</h3>
+        <h1>SANTAL</h1>
+        <h2>말보로 맨에서 영감을 받아 탄생한 센슈얼하고 스모키한 머스크향</h2>
+        <p>
+            타오르는 모닥불과 스모키하게 날리는 연기, 빛이 사라지고 난 이후에 느껴지는 센슈얼한 무드. 상탈 33은 전설적인 말보로 맨에서 영감을 받은 센슈얼한 향수입니다. 카다멈, 아이리스, 바이올렛, 암브록스에 스모키한 우드 향이 어우러져 스파이시하고, 가죽 향이 맴도는 머스크 노트를 완성합니다.
+        </p>
+    </div>    <!-- //#content_text -->
+
+    <div id="santal_tab">
+        <!-- 탭 메뉴 -->
+        <ul id="santal_tabmenu" class="clearfix">
+            <li class="on" data-target="#santal33">SANTAL 33</li>
+            <li data-target="#santal26">SANTAL 26</li>
+        </ul>
+
+        <!-- 첫번째 메뉴의 컨텐츠 -->
+        <ul id="santal33" class="santal_content on">
+            <li>
+                <a href="#santal33"><img src="images/santal33_011.jpg" alt="santal33_01"></a>
+                <div class="santal_text">
+                    <a href="#santal33">
+                        <span class="name">오 드 퍼퓸</span>
+                        <span class="size">50 ml / 1.7 fl oz</span>
+                        <span class="price">200,000원</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#santal33"><img src="images/santal33_022.jpg" alt="santal33_02"></a>
+                <div class="santal_text">
+                    <a href="#santal33">
+                        <span class="name">오 드 퍼퓸</span>
+                        <span class="size">100 ml / 3.4 fl oz</span>
+                        <span class="price">300,000원</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#santal33"><img src="images/santal33_033.jpg" alt="santal33_03"></a>
+                <div class="santal_text">
+                    <a href="#santal33">
+                        <span class="name">오 드 퍼퓸</span>
+                        <span class="size">500 ml / 16.9 fl oz</span>
+                        <span class="price">1,040,000원</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#santal33"><img src="images/santal33_044.jpg" alt="santal33_04"></a>
+                <div class="santal_text">
+                    <a href="#santal33">
+                        <span class="name">오 드 퍼퓸</span>
+                        <span class="size">15 ml / 0.5 fl oz</span>
+                        <span class="price">90,000원</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#santal33"></a>
+                <div class="santal_text">
+                    <a href="#santal33">
+                        <span class="name">샤워 젤</span>
+                        <span class="size">237 ml / 8 fl oz</span>
+                        <span class="price">63,000원</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#santal33"></a>
+                <div class="santal_text">
+                    <a href="#santal33">
+                        <span class="name">바디오일</span>
+                        <span class="size">120 ml / 4 fl oz</span>
+                        <span class="price">80,000원</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#santal33"></a>
+                <div class="santal_text">
+                    <a href="#santal33">
+                        <span class="name">오 드 퍼퓸 샘플</span>
+                        <span class="size">1.5 ml / 0.05 fl oz</span>
+                        <span class="price">7,000원</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#santal33"><img src="images/santal33_088.jpg" alt="santal33_08"></a>
+                <div class="santal_text">
+                    <a href="#santal33">
+                        <span class="name">여행용 튜브 세트</span>
+                        <span class="size">10 ml / 0.33 fl oz</span>
+                        <span class="price">170,000원</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#santal33"><img src="images/santal33_099.jpg" alt="santal33_09"></a>
+                <div class="santal_text">
+                    <a href="#santal33">
+                        <span class="name">여행용 튜브 리필 세트</span>
+                        <span class="size">10 ml / 0.33 fl oz</span>
+                        <span class="price">170,000원</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#santal33"><img src="images/santal33_1010.jpg" alt="santal33_10"></a>
+                <div class="santal_text">
+                    <a href="#santal33">
+                        <span class="name">퍼퓸 오일</span>
+                        <span class="size">30 ml / 1 fl oz</span>
+                        <span class="price">159,000원</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#santal33"><img src="images/santal33_1111.jpg" alt="santal33_11"></a>
+                <div class="santal_text">
+                    <a href="#santal33">
+                        <span class="name">바디 바 디스커버리 세트</span>
+                        <span class="size">3×90 g</span>
+                        <span class="price">68,000원</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#santal33"><img src="images/santal33_12.jpg" alt="santal33_12"></a>
+                <div class="santal_text">
+                    <a href="#santal33">
+                        <span class="name">바디 바</span>
+                        <span class="size">225 g / 8 oz</span>
+                        <span class="price">50,000원</span>
+                    </a>
+                </div>
+            </li>
+        </ul>        <!-- //#santal33 -->
+
+        <!-- 두번째 메뉴의 컨텐츠 -->
+        <ul id="santal26" class="santal_content">
+            <li>
+                <a href="#santal26"><img src="images/santal26_011.jpg" alt="santal_01"></a>
+                <div class="santal_text">
+                    <a href="#santal26">
+                        <span class="name">캔들 디스커버리 세트</span>
+                        <span class="size">3×56.6 g / 2 oz</span>
+                        <span class="price">109,000원</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#santal26"><img src="images/santal26_022.jpg" alt="santal_02"></a>
+                <div class="santal_text">
+                    <a href="#santal26">
+                        <span class="name">홈 디퓨저</span>
+                        <span class="size">one size</span>
+                        <span class="price">300,000원</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#santal26"><img src="images/santal26_033.jpg" alt="santal_03"></a>
+                <div class="santal_text">
+                    <a href="#santal26">
+                        <span class="name">클래식 캔들</span>
+                        <span class="size">245 g / 8.6 oz</span>
+                        <span class="price">106,000원</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#santal26"><img src="images/santal26_044.jpg" alt="santal26_04"></a>
+                <div class="santal_text">
+                    <a href="#santal26">
+                        <span class="name">홈 프래그런스</span>
+                        <span class="size">100 ml / 3.4 fl oz</span>
+                        <span class="price">161,000원</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#santal26"><img src="images/santal26_055.jpg" alt="santal26_05"></a>
+                <div class="santal_text">
+                    <a href="#santal26">
+                        <span class="name">화이트 콘크리트 캔들</span>
+                        <span class="size">1.2kg / 42.3 oz</span>
+                        <span class="price">480,000원</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#santal26"><img src="images/santal26_066.jpg" alt="santal26_06"></a>
+                <div class="santal_text">
+                    <a href="#santal26">
+                        <span class="name">콘크리트 캔들</span>
+                        <span class="size">1.2kg / 42.3 oz</span>
+                        <span class="price">480,000원</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#santal26"></a>
+                <div class="santal_text">
+                    <a href="#santal26">
+                        <span class="name">오 드 퍼퓸 샘플</span>
+                        <span class="size">1.5 ml / 0.05 fl oz</span>
+                        <span class="price">7,000원</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#santal26"><img src="images/santal26_088.jpg" alt="santal26_08"></a>
+                <div class="santal_text">
+                    <a href="#santal26">
+                        <span class="name">미니 콘크리트 캔들</span>
+                        <span class="size">3 x 59.5 g / 2.1 oz</span>
+                        <span class="price">105,000원</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#santal26"></a>
+                <div class="santal_text">
+                    <a href="#santal26">
+                        <span class="name">센티드 노트</span>
+                        <span class="size">OS</span>
+                        <span class="price">58,000원</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#santal26"><img src="images/santal26_1010.jpg" alt="santal26_10"></a>
+                <div class="santal_text">
+                    <a href="#santal26">
+                        <span class="name">홈 디퓨저 오일</span>
+                        <span class="size">30 ml / 1 fl oz</span>
+                        <span class="price">95,000원</span>
+                    </a>
+                </div>
+            </li>
+        </ul>        <!-- //#santal26 -->
+    </div>    <!-- //#tab -->
+
+    <footer>
+        <div id="footer" class="clearfix">
+            <div id="footer_logo">
+                <img src="images/logo.png" alt="footer_logo">
+            </div>
+            <div id="footer_content">
+                <ul id="footer_menu" class="clearfix">
+                    <li>
+                        <span>브랜드 소개</span>
+                        <ul>
+                           <li><a href="#">회사 소개</a></li>
+                           <li><a href="#">리필 프로그램</a></li>
+                           <li><a href="#">보도자료</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>클라이언트 케어</span>
+                        <ul>
+                           <li><a href="#">문의하기</a></li>
+                           <li><a href="#">디퓨저 보증</a></li>
+                           <li><a href="#">개인 정보 정책</a></li>
+                           <li><a href="#">이용약관</a></li>
+                           <li><a href="#">판매약관</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>배 송</span>
+                        <ul>
+                           <li><a href="#">배송 및 취급</a></li>
+                           <li><a href="#">배송 옵션</a></li>
+                           <li><a href="#">클릭 및 수집</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>매 장</span>
+                        <ul>
+                           <li><a href="#">매장 찾기</a></li>
+                           <li><a href="#">매장 내 서비스</a></li>
+                        </ul>
+                    </li>
+                </ul>        <!-- //#footer_menu -->
+    
+                <div id="footer_news">
+                    <p>
+                        <span>뉴스레터 가입</span>
+                        가입시 귀하의 이메일 주소가 르 라보 제품, 이벤트 및 제안에 대한 마케팅 뉴스레터 및 정보를 보내는 것에 사용됨을 동의하는 것입니다. 각 뉴스레터의 구독 취소 링크를 클릭하면 언제든지 구독을 취소할 수 있습니다. 
+                    </p>
+                    <input type="email" name="email" id="email" placeholder="이메일 주소를 입력하세요." autocomplete="off">
+                </div>        <!-- //#newsletter -->
+            </div>            <!-- //#footer_content -->
+        </div>        <!-- //#footer -->
+    </footer>
+
+</body>
+</html>

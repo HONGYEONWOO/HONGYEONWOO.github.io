@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUDAKE dessert</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu_style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/menu_script.js"></script>
+</head>
+<body>
+    <div id="main_img">
+        <div id="notice">
+            <ul class="clearfix">
+                <li><a href="#">누데이크 카카오톡 채널을 오픈했습니다.</a></li>
+                <li><a href="#">배달의 민족 앱을 통해 누데이크를 편하게 즐겨보세요.</a></li>
+                <li><a href="#">10월 28일, 누데이크의 새 컬렉션을 공개합니다.</a></li>
+                <li><a href="#">누데이크의 두 번째 플래그십 스토어 성수점이 오픈했습니다.</a></li>
+            </ul>
+        </div>    <!-- //#notice -->
+    
+        <div id="logo">
+            <a href="index.html"><img src="images/logo_bk.png" alt="logo"></a>
+        </div>
+    
+        <ul id="nav" class="clearfix">
+            <li>
+                <span>DESSERT</span>
+                <ul class="navslide">
+                    <li><a href="menu.html">SIGNATURE CAKE</a></li>
+                    <li><a href="menu.html">SMALL DESERT</a></li>
+                    <li><a href="menu.html">BAKERY</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>DRINKS</span>
+                <ul class="navslide">
+                    <li><a href="#coffee">COFFEE</a></li>
+                    <li><a href="#beverage">BEVERAGE</a></li>
+                    <li><a href="#signature">SIGNATURE</a></li>
+                    <li><a href="#blendingHerbTea">BLENDING HERB TEA</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><span>STORE</span></a>
+            </li>
+            <li>
+                <span>ABOUT</span>
+                <ul class="navslide">
+                    <li><a href="#aboutNudake">ABOUT NUDAKE</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>ORDER</span>
+                <ul class="navslide">
+                    <li><a href="menu.html#tab">STORE ORDER</a></li>
+                    <li><a href="menu.html#tab">ORDER LIST</a></li>
+                </ul>    
+            </li>
+        </ul>    <!-- //#nav -->
+
+        <img src="images/sub01_main_cake.png" alt="cake">
+        <img src="images/sub01_main_cream.png" alt="cream">
+        <img src="images/sub01_main_goat.png" alt="goat">
+    </div>    <!-- //#main_img -->
+
+    <a href="#" class="top black"><span>top</span></a>
+
+    <ul id="menu" class="clearfix">
+        <li data-target="#all">
+            <div class="circle"><span>all</span></div>
+            <span>전체보기</span>
+        </li>
+        <li class="on" data-target="#best">
+            <div class="circle"><span>best</span></div>
+            <span>베스트 메뉴</span>           
+        </li>
+        <li data-target="#new">
+            <div class="circle"><span>new</span></div>
+            <span>신메뉴</span>           
+        </li>
+        <li data-target="#signatureCake">
+            <div class="circle"><span>signature</span></div>    
+            <span>시그니처 케이크</span>           
+        </li>
+        <li data-target="#smallDessert">
+            <div class="circle"><span>small</span></div>
+            <span>스몰 디저트</span>           
+        </li>
+        <li data-target="#etc">
+            <div class="circle"><span>etc</span></div>
+            <span>etc.</span>           
+        </li>
+    </ul>    <!-- //#menu -->
+    
+    <!-- 1: 전체메뉴 -->
+    <div id="all" class="contents">
+        <!-- 1 -->
+        <div class="content large">
+            <a href="#peak"><img src="images/menu_peak_02.jpg" alt="peak"></a>
+            <div class="text">
+                <a href="#peak">
+                    <h3 class="title">PEAK</h3>
+                    <span class="name">피크</span>
+                    <span class="price">32,000원</span>
+                    <p>
+                        부드럽고 깊은 말차 크림을 먹물 페이스티로 감싼 센터피스 케이크    
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="content medium">
+            <a href="#mustard"><img src="images/menu_mustard_02.jpg" alt="mustard"></a>
+            <div class="text">
+                <a href="#mustard">
+                    <h3 class="title">WHOLE GRAIN MUSTARD BUTTER</h3>
+                    <span class="name">홀 그레인 머스타드 버터</span>
+                    <span class="price">13,000원</span>
+                    <p>
+                        씨겨자를 넣어 무겁지 않은 맛이 돋보이는 홀그레인 머스타드 버터
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="content">
+            <a href="#colosseoSmall"><img src="images/menu_colosseomini.jpg" alt="colosseoSmall"></a>
+            <div class="text">
+                <a href="#colosseoSmall">
+                    <h3 class="title">COLOSSEO SMALL</h3>
+                    <span class="name">콜로세오 스몰</span>
+                    <span class="price">12,000원</span>
+                    <p>
+                        초콜릿 크러스트와 마스카포네 필링으로 만들어진 치즈 케이크 '콜로세오'의 스몰 사이즈 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="content">
+            <a href="#colosseo"><img src="images/menu_colosseo.png" alt="colosseo"></a>
+            <div class="text">
+                <a href="#colosseo">
+                    <h3 class="title">COLOSSEO</h3>
+                    <span class="name">콜로세오</span>
+                    <span class="price">45,000원</span>
+                    <p>
+                        바삭한 다크 초콜릿 크러스트와 부드러운 마스카포네 필링이 대비를 이루는 치즈케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 5 -->
+        <div class="content">
+            <a href="#picnic"><img src="images/menu_picnic.jpg" alt="picnic"></a>
+            <div class="text">
+                <a href="#picnic">
+                    <h3 class="title">PICNIC</h3>
+                    <span class="name">피크닉</span>
+                    <span class="price">32,000원</span>
+                    <p>
+                        아몬드 크림이 담긴 잡곡빵 바구니에 크림치즈와 제철 과일을 얹은 그림 같은 타르트 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 6 -->
+        <div class="content">
+            <a href="#fogSmall"><img src="images/menu_fogmini.jpg" alt="fogSmall"></a>
+            <div class="text">
+                <a href="#fogSmall">
+                    <h3 class="title">FOG SMALL</h3>
+                    <span class="name">포그 스몰</span>
+                    <span class="price">13,000원</span>
+                    <p>
+                        블랙 올리브 시트에 체다 치즈 크림을 샌딩한 옴브레 케이크 '포그'의 스몰 사이즈 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 7 -->
+        <div class="content half">
+            <a href="detail.html"><img src="images/menu_bugercake_02.png" alt="bugercake"></a>
+            <div class="text">
+                <a href="detail.html">
+                    <h3 class="title">BURGER CAKE</h3>
+                    <span class="name">버거 케이크</span>
+                    <span class="price">각 5,500원</span>
+                    <p>
+                        어니언 피클 버거 케이크, 피크 버거 케이크, 콘 라멘 버거 케이크를 마이크로 사이즈로 즐겨보세요. 
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 8 -->
+        <div class="content">
+            <a href="#nubrulee"><img src="images/menu_nubrulee.png" alt="nubrulee"></a>
+            <div class="text">
+                <a href="#nubrulee">
+                    <h3 class="title">NU BRULEE</h3>
+                    <span class="name">누 브륄레</span>
+                    <span class="price">7,000원</span>
+                    <p>
+                        묵직한 바닐라 크림에 시나몬과 위스키 향을 더한 누데이크스타일 크림 브륄레
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 9 -->
+        <div class="content">
+            <a href="#tartmoon"><img src="images/menu_tart.png" alt="tartmoon"></a>
+            <div class="text">
+                <a href="#tartmoon">
+                    <h3 class="title">TART MOON</h3>
+                    <span class="name">타르트 문</span>
+                    <span class="price">8,000원</span>
+                    <p>
+                        바삭한 크러스트에 아몬드 크림과 와사비를 첨가한 모찌리도후를 얹은 타르트
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 10 -->
+        <div class="content">
+            <a href="#mushroom"><img src="images/menu_mushroom.jpg" alt="mushroom"></a>
+            <div class="text">
+                <a href="#mushroom">
+                    <h3 class="title">MUSHROOM</h3>
+                    <span class="name">머쉬룸</span>
+                    <span class="price">49,000원</span>
+                    <p>
+                        부드러운 바닐라 크림에 상큼한 살구 소스, 달콤한 둘세 가나슈를 더한 바삭한 식감의 버섯 모양 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 11 -->
+        <div class="content">
+            <a href="#oik"><img src="images/menu_oik.jpg" alt="oik"></a>
+            <div class="text">
+                <a href="#oik">
+                    <h3 class="title">OIK</h3>
+                    <span class="name">오이크</span>
+                    <span class="price">12,000원</span>
+                    <p>
+                        애플민트와 딜의 향이 은은한 크림에 오이 젤과 토마토 잼을 더해 청량한 무스 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 12 -->
+        <div class="content">
+            <a href="#chouxCan"><img src="images/menu_chouxcan.jpg" alt="chouxCan"></a>
+            <div class="text">
+                <a href="#chouxCan">
+                    <h3 class="title">CHOUX CAN</h3>
+                    <span class="name">슈캔</span>
+                    <span class="price">12,000원</span>
+                    <p>
+                        캔 모양의 슈 속에 옥수수 크림과 캐러맬 소스가 담긴 고소하고 달콤한 디저트
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 13 -->
+        <div class="content">
+            <a href="#pieta"><img src="images/menu_pieta.jpg" alt="pieta"></a>
+            <div class="text">
+                <a href="#pieta">
+                    <h3 class="title">PIETA</h3>
+                    <span class="name">피에타</span>
+                    <span class="price">12,000원</span>
+                    <p>
+                        부드러운 유자 크림과 치즈 크림 무스에 바삭한 레이어를 더해 다양한 식감을 선사하는 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 14 -->
+        <div class="content">
+            <a href="#wasabi"><img src="images/menu_wasabi.png" alt="wasabi"></a>
+            <div class="text">
+                <a href="#wasabi">
+                    <h3 class="title">WASABI BUTTER</h3>
+                    <span class="name">와사비 버터</span>
+                    <span class="price">13,000원</span>
+                    <p>
+                        생와사비로 알싸한 맛을 더한 독특한 와사비 버터
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 15 -->
+        <div class="content">
+            <a href="#truffle"><img src="images/menu_trufflebutter.jpg" alt="truffle"></a>
+            <div class="text">
+                <a href="#truffle">
+                    <h3 class="title">TRUFFLE BUTTER</h3>
+                    <span class="name">트러플 버터</span>
+                    <span class="price">15,000원</span>
+                    <p>
+                        트러플 오일과 블랙 올리브의 풍미가 조화롭게 어우러지는 트러플 버터
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 16 -->
+        <div class="content">
+            <a href="#noir"><img src="images/menu_noir.jpg" alt="noir"></a>
+            <div class="text">
+                <a href="#noir">
+                    <h3 class="title">SAINT HONORE NOIR</h3>
+                    <span class="name">생토노레 누아르</span>
+                    <span class="price">40,000원</span>
+                    <p>
+                        정통 생토노레를 누데이크 스타일로 재해석한 디저트
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 17 -->
+        <div class="content">
+            <a href="#column"><img src="images/menu_column.jpg" alt="column"></a>
+            <div class="text">
+                <a href="#column">
+                    <h3 class="title">COLUMN</h3>
+                    <span class="name">콜럼</span>
+                    <span class="price">19,000원</span>
+                    <p>
+                        블루베리 콤포트를 레이어한 시트에 크림 치즈로 아이싱한 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 18 -->
+        <div class="content">
+            <a href="#ground"><img src="images/menu_ground.jpg" alt="ground"></a>
+            <div class="text">
+                <a href="#ground">
+                    <h3 class="title">GROUND</h3>
+                    <span class="name">그라운드</span>
+                    <span class="price">9,000원</span>
+                    <p>
+                        피스타치오 크림과 견과류에 캐러멜을 입힌 프랄리네로 속을 채운 먹물 페이스트리 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 19 -->
+        <div class="content">
+            <a href="#blackCroissant"><img src="images/menu_blackcroissant.jpg" alt="blackCroissant"></a>
+            <div class="text">
+                <a href="#blackCroissant">
+                    <h3 class="title">BLACK CROISSANT</h3>
+                    <span class="name">블랙 크로와상</span>
+                    <span class="price">7,000원</span>
+                    <p>
+                        흑임자 크림과 버터를 샌딩한 먹물 페이스트리
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 20 -->
+        <div class="content">
+            <a href="#yangpain"><img src="images/menu_yang.png" alt="yangpain"></a>
+            <div class="text">
+                <a href="#yangpain">
+                    <h3 class="title">YANG PAIN</h3>
+                    <span class="name">양빵</span>
+                    <span class="price">4,000원</span>
+                    <p>
+                        마스카포네 치즈를 첨가한 화이트 크림과 부드러운 식감이조화로운 브리오슈 
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 21 -->
+        <div class="content">
+            <a href="#cauli"><img src="images/menu_cauli.png" alt="cauli"></a>
+            <div class="text">
+                <a href="#cauli">
+                    <h3 class="title">CAULI SMALL</h3>
+                    <span class="name">콜리 스몰</span>
+                    <span class="price">36,000원</span>
+                    <p>
+                        당근시트에 크림치즈와 사프란 생크림 아이싱 후, 콜리플라워와 아스파라거스로 장식한 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>        <!-- // #all -->
+
+    <!-- 2 : 베스트 메뉴 -->
+    <div id="best" class="contents on">
+        <!-- 1 -->
+        <div class="content large">
+            <ul id="slide">
+                <li><a href="detail.html"><img src="images/menu_picnic_02.png" alt="picnic"></a></li>
+                <li><a href="detail.html"><img src="images/slide_01.jpg" alt="slide_01"></a></li>
+                <li><a href="detail.html"><img src="images/slide_02.jpg" alt="slide_02"></a></li>
+                <li><a href="detail.html"><img src="images/slide_03.jpg" alt="slide_03"></a></li>
+            </ul>
+            <div class="text">
+                <a href="detail.html">
+                    <h3 class="title">PICNIC</h3>
+                    <span class="name">피크닉</span>
+                    <span class="price">32,000원</span>
+                    <p>
+                        아몬드 크림이 담긴 잡곡빵 바구니에 크림치즈와 제철 과일을 얹은 그림 같은 타르트 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="content medium">
+            <a href="#fog"><img src="images/menu_fog_02.png" alt="fog"></a>
+            <div class="text">
+                <a href="#fog">
+                    <h3 class="title">FOG</h3>
+                    <span class="name">포그</span>
+                    <span class="price">57,000원</span>
+                    <p>
+                        블랙 올리브 시트에 체다 치즈 크림을 샌딩한 옴브레 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="content">
+            <a href="#peak"><img src="images/menu_peak.png" alt="peak"></a>
+            <div class="text">
+                <a href="#peak">
+                    <h3 class="title">PEAK</h3>
+                    <span class="name">피크</span>
+                    <span class="price">39,000원</span>
+                    <p>
+                        부드럽고 깊은 말차 크림을 먹물 페이스트리로 감싼 센터피스 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="content">
+            <a href="#colosseo"><img src="images/menu_colosseo.png" alt="colosseo"></a>
+            <div class="text">
+                <a href="#colosseo">
+                    <h3 class="title">COLOSSEO</h3>
+                    <span class="name">콜로세오</span>
+                    <span class="price">45,000원</span>
+                    <p>
+                        바삭한 다크 초콜릿 크러스트와 부드러운 마스카포네 필링이 대비를 이루는 치즈케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 5 : 비디오 -->
+        <div id="video">
+            <video src="video/sub01_video.mp4" loop="" autoplay="" muted="" playsinline=""></video>
+        </div>
+        <!-- 6 -->
+        <div class="content full">
+            <a href="detail.html"><img src="images/menu_bugercake_02.png" alt="bugercake"></a>
+            <div class="text">
+                <a href="detail.html">
+                    <h3 class="title">BURGER CAKE</h3>
+                    <span class="name">버거 케이크</span>
+                    <span class="price">각 5,500원</span>
+                    <p>
+                        누데이크 성수 플래그십 스토어 오픈 기념<br>
+                        어니언 피클 버거 케이크, 피크 버거 케이크, 콘 라멘 버거 케이크를 마이크로 사이즈로 즐겨보세요. 
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 7 -->
+        <div class="content">
+            <a href="#cauli"><img src="images/menu_cauli.png" alt="cauli"></a>
+            <div class="text">
+                <a href="#cauli">
+                    <h3 class="title">CAULI SMALL</h3>
+                    <span class="name">콜리 스몰</span>
+                    <span class="price">36,000원</span>
+                    <p>
+                        당근시트에 크림치즈와 사프란 생크림 아이싱 후, 콜리플라워와 아스파라거스로 장식한 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 8 -->
+        <div class="content">
+            <a href="#yangpain"><img src="images/menu_yang.png" alt="yangpain"></a>
+            <div class="text">
+                <a href="#yangpain">
+                    <h3 class="title">YANG PAIN</h3>
+                    <span class="name">양빵</span>
+                    <span class="price">4,000원</span>
+                    <p>
+                        마스카포네 치즈를 첨가한 화이트 크림과 부드러운 식감이조화로운 브리오슈 
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 9 -->
+        <div class="content">
+            <a href="#nubrulee"><img src="images/menu_nubrulee.png" alt="nubrulee"></a>
+            <div class="text">
+                <a href="#nubrulee">
+                    <h3 class="title">NU BRULEE</h3>
+                    <span class="name">누 브륄레</span>
+                    <span class="price">7,000원</span>
+                    <p>
+                        묵직한 바닐라 크림에 시나몬과 위스키 향을 더한 누데이크스타일 크림 브륄레
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 10 -->
+        <div class="content">
+            <a href="#tartmoon"><img src="images/menu_tart.png" alt="tartmoon"></a>
+            <div class="text">
+                <a href="#tartmoon">
+                    <h3 class="title">TART MOON</h3>
+                    <span class="name">타르트 문</span>
+                    <span class="price">8,000원</span>
+                    <p>
+                        바삭한 크러스트에 아몬드 크림과 와사비를 첨가한 모찌리도후를 얹은 타르트
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>        <!-- // #best -->
+    
+    <!-- 3 : 신메뉴 -->
+    <div id="new" class="contents">
+        <!-- 1 -->
+        <div class="content full">
+            <a href="#blackBread"><img src="images/menu_black.jpg" alt="blackBread"></a>
+            <div class="text">
+                <a href="#blackBread">
+                    <h3 class="title">BLACK BREAD</h3>
+                    <span class="name">양빵 / 블랙 크로와상 / 그라운드</span>
+                    <span class="price">4,000원 / 7,000원 / 9,000원</span>
+                    <p>
+                        누데이크의 독특한 먹물 브레드들을 취향에 맞게 다양하게 즐겨보세요!
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="content full">
+            <div class="text">
+                <a href="detail.html">
+                    <h3 class="title">BURGER CAKE</h3>
+                    <span class="name">버거 케이크</span>
+                    <span class="price">각 5,500원</span>
+                    <p>
+                        누데이크 성수 플래그십 스토어 오픈 기념<br>
+                        어니언 피클 버거 케이크, 피크 버거 케이크, 콘 라멘 버거 케이크를 마이크로 사이즈로 즐겨보세요. 
+                    </p>
+                </a>
+            </div>
+            <a href="detail.html"><img src="images/menu_bugercake_02.png" alt="bugercake"></a>
+        </div>
+        <!-- 3 -->
+        <div class="content large">
+            <a href="#picnic"><img src="images/menu_picnic_02.png" alt="picnic"></a>
+            <div class="text">
+                <a href="#picnic">
+                    <h3 class="title">PICNIC</h3>
+                    <span class="name">피크닉</span>
+                    <span class="price">32,000원</span>
+                    <p>
+                        아몬드 크림이 담긴 잡곡빵 바구니에 크림치즈와 제철 과일을 얹은 그림 같은 타르트 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="content medium">
+            <a href="#truffleButter"><img src="images/menu_butter.jpg" alt="truffleButter"></a>
+            <div class="text">
+                <a href="#truffleButter">
+                    <h3 class="title">TRUFFLE BUTTER</h3>
+                    <span class="name">트러플 버터</span>
+                    <span class="price">15,000원</span>
+                    <p>
+                        트러플 오일과 블랙 올리브의 풍미가 조화롭게 어우러지는 트러플 버터
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 5 -->
+        <div class="content">
+            <a href="#mushroom"><img src="images/menu_mushroom.jpg" alt="mushroom"></a>
+            <div class="text">
+                <a href="#mushroom">
+                    <h3 class="title">MUSHROOM</h3>
+                    <span class="name">머쉬룸</span>
+                    <span class="price">49,000원</span>
+                    <p>
+                        부드러운 바닐라 크림에 상큼한 살구 소스, 달콤한 둘세 가나슈를 더한 바삭한 식감의 버섯 모양 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 6 -->
+        <div class="content">
+            <a href="#oik"><img src="images/menu_oik.jpg" alt="oik"></a>
+            <div class="text">
+                <a href="#oik">
+                    <h3 class="title">OIK</h3>
+                    <span class="name">오이크</span>
+                    <span class="price">12,000원</span>
+                    <p>
+                        애플민트와 딜의 향이 은은한 크림에 오이 젤과 토마토 잼을 더해 청량한 무스 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 7 -->
+        <div class="content">
+            <a href="#chouxCan"><img src="images/menu_chouxcan.jpg" alt="chouxCan"></a>
+            <div class="text">
+                <a href="#chouxCan">
+                    <h3 class="title">CHOUX CAN</h3>
+                    <span class="name">슈캔</span>
+                    <span class="price">12,000원</span>
+                    <p>
+                        캔 모양의 슈 속에 옥수수 크림과 캐러맬 소스가 담긴 고소하고 달콤한 디저트
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 8 -->
+        <div class="content">
+            <a href="#pieta"><img src="images/menu_pieta.jpg" alt="pieta"></a>
+            <div class="text">
+                <a href="#pieta">
+                    <h3 class="title">PIETA</h3>
+                    <span class="name">피에타</span>
+                    <span class="price">12,000원</span>
+                    <p>
+                        부드러운 유자 크림과 치즈 크림 무스에 바삭한 레이어를 더해 다양한 식감을 선사하는 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>        <!-- // #new -->
+
+    <!-- 4 : 시그니처 케이크 -->
+    <div id="signatureCake" class="contents">
+        <!-- 1 -->
+        <div class="content half">
+            <a href="#peak"><img src="images/menu_peak_02.jpg" alt="peak"></a>
+            <div class="text">
+                <a href="#peak">
+                    <h3 class="title">PEAK</h3>
+                    <span class="name">피크</span>
+                    <span class="price">32,000원</span>
+                    <p>
+                        부드럽고 깊은 말차 크림을 먹물 페이스티로 감싼 센터피스 케이크    
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="content">
+            <a href="#peakSmall"><img src="images/menu_peak.png" alt="peakSmall"></a>
+            <div class="text">
+                <a href="#peak">
+                    <h3 class="title">PEAK SMALL</h3>
+                    <span class="name">피크 스몰</span>
+                    <span class="price">23,000원</span>
+                    <p>
+                        부드럽고 깊은 말차 크림을 먹물 페이스티로 감싼 누데이크 시그니처 '피크'의 스몰 사이즈 케이크   
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="content">
+            <a href="#cauli"><img src="images/menu_cauli.png" alt="cauli"></a>
+            <div class="text">
+                <a href="#cauli">
+                    <h3 class="title">CAULI SMALL</h3>
+                    <span class="name">콜리 스몰</span>
+                    <span class="price">36,000원</span>
+                    <p>
+                        당근시트에 크림치즈와 사프란 생크림 아이싱 후, 콜리플라워와 아스파라거스로 장식한 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="content">
+            <a href="#colosseo"><img src="images/menu_colosseo.png" alt="colosseo"></a>
+            <div class="text">
+                <a href="#colosseo">
+                    <h3 class="title">COLOSSEO</h3>
+                    <span class="name">콜로세오</span>
+                    <span class="price">45,000원</span>
+                    <p>
+                        바삭한 다크 초콜릿 크러스트와 부드러운 마스카포네 필링이 대비를 이루는 치즈케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 5 -->
+        <div class="content">
+            <a href="#colosseoSmall"><img src="images/menu_colosseomini.jpg" alt="colosseoSmall"></a>
+            <div class="text">
+                <a href="#colosseoSmall">
+                    <h3 class="title">COLOSSEO SMALL</h3>
+                    <span class="name">콜로세오 스몰</span>
+                    <span class="price">12,000원</span>
+                    <p>
+                        초콜릿 크러스트와 마스카포네 필링으로 만들어진 치즈 케이크 '콜로세오'의 스몰 사이즈 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 6 -->
+        <div class="content">
+            <a href="#fog"><img src="images/menu_fog.jpg" alt="fog"></a>
+            <div class="text">
+                <a href="#fog">
+                    <h3 class="title">FOG</h3>
+                    <span class="name">포그</span>
+                    <span class="price">57,000원</span>
+                    <p>
+                        블랙 올리브 시트에 체다 치즈 크림을 샌딩한 옴브레 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 7 -->
+        <div class="content">
+            <a href="#fogSmall"><img src="images/menu_fogmini.jpg" alt="fogSmall"></a>
+            <div class="text">
+                <a href="#fogSmall">
+                    <h3 class="title">FOG SMALL</h3>
+                    <span class="name">포그 스몰</span>
+                    <span class="price">13,000원</span>
+                    <p>
+                        블랙 올리브 시트에 체다 치즈 크림을 샌딩한 옴브레 케이크 '포그'의 스몰 사이즈 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 8 -->
+        <div class="content full">
+            <div class="text">
+                <a href="detail.html">
+                    <h3 class="title">BURGER CAKE</h3>
+                    <span class="name">버거 케이크</span>
+                    <span class="price">각 5,500원</span>
+                    <p>
+                        어니언 피클 버거 케이크, 피크 버거 케이크, 콘 라멘 버거 케이크를 마이크로 사이즈로 즐겨보세요. 
+                    </p>
+                </a>
+            </div>
+            <a href="detail.html"><img src="images/menu_bugercake_02.png" alt="bugercake"></a>
+        </div>
+        <!-- 9 -->
+        <div class="content">
+            <a href="#picnic"><img src="images/menu_picnic.jpg" alt="picnic"></a>
+            <div class="text">
+                <a href="#picnic">
+                    <h3 class="title">PICNIC</h3>
+                    <span class="name">피크닉</span>
+                    <span class="price">32,000원</span>
+                    <p>
+                        아몬드 크림이 담긴 잡곡빵 바구니에 크림치즈와 제철 과일을 얹은 그림 같은 타르트 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 10 -->
+        <div class="content">
+            <a href="#mushroom"><img src="images/menu_mushroom.jpg" alt="mushroom"></a>
+            <div class="text">
+                <a href="#mushroom">
+                    <h3 class="title">MUSHROOM</h3>
+                    <span class="name">머쉬룸</span>
+                    <span class="price">49,000원</span>
+                    <p>
+                        부드러운 바닐라 크림에 상큼한 살구 소스, 달콤한 둘세 가나슈를 더한 바삭한 식감의 버섯 모양 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 11 -->
+        <div class="content">
+            <a href="#noir"><img src="images/menu_noir.jpg" alt="noir"></a>
+            <div class="text">
+                <a href="#noir">
+                    <h3 class="title">SAINT HONORE NOIR</h3>
+                    <span class="name">생토노레 누아르</span>
+                    <span class="price">40,000원</span>
+                    <p>
+                        정통 생토노레를 누데이크 스타일로 재해석한 디저트
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 12 -->
+        <div class="content">
+            <a href="#column"><img src="images/menu_column.jpg" alt="column"></a>
+            <div class="text">
+                <a href="#column">
+                    <h3 class="title">COLUMN</h3>
+                    <span class="name">콜럼</span>
+                    <span class="price">19,000원</span>
+                    <p>
+                        블루베리 콤포트를 레이어한 시트에 크림 치즈로 아이싱한 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>    <!-- //#signatureCake -->
+    
+    <!-- 5 : 스몰 디저트 -->
+    <div id="smallDessert" class="contents">
+        <!-- 1 -->
+        <div class="content">
+            <a href="#yangpain"><img src="images/menu_yang.png" alt="yangpain"></a>
+            <div class="text">
+                <a href="#yangpain">
+                    <h3 class="title">YANG PAIN</h3>
+                    <span class="name">양빵</span>
+                    <span class="price">4,000원</span>
+                    <p>
+                        마스카포네 치즈를 첨가한 화이트 크림과 부드러운 식감이조화로운 브리오슈 
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="content">
+            <a href="#blackCroissant"><img src="images/menu_blackcroissant.jpg" alt="blackCroissant"></a>
+            <div class="text">
+                <a href="#blackCroissant">
+                    <h3 class="title">BLACK CROISSANT</h3>
+                    <span class="name">블랙 크로와상</span>
+                    <span class="price">7,000원</span>
+                    <p>
+                        흑임자 크림과 버터를 샌딩한 먹물 페이스트리
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="content">
+            <a href="#tartmoon"><img src="images/menu_tart.png" alt="tartmoon"></a>
+            <div class="text">
+                <a href="#tartmoon">
+                    <h3 class="title">TART MOON</h3>
+                    <span class="name">타르트 문</span>
+                    <span class="price">8,000원</span>
+                    <p>
+                        바삭한 크러스트에 아몬드 크림과 와사비를 첨가한 모찌리도후를 얹은 타르트
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="content">
+            <a href="#ground"><img src="images/menu_ground.jpg" alt="ground"></a>
+            <div class="text">
+                <a href="#ground">
+                    <h3 class="title">GROUND</h3>
+                    <span class="name">그라운드</span>
+                    <span class="price">9,000원</span>
+                    <p>
+                        피스타치오 크림과 견과류에 캐러멜을 입힌 프랄리네로 속을 채운 먹물 페이스트리 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 5 -->
+        <div class="content full">
+            <a href="detail.html"><img src="images/menu_bugercake_02.png" alt="bugercake"></a>
+            <div class="text">
+                <a href="detail.html">
+                    <h3 class="title">BURGER CAKE</h3>
+                    <span class="name">버거 케이크</span>
+                    <span class="price">각 5,500원</span>
+                    <p>
+                        어니언 피클 버거 케이크, 피크 버거 케이크, 콘 라멘 버거 케이크를 마이크로 사이즈로 즐겨보세요. 
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 6 -->
+        <div class="content">
+            <a href="#nubrulee"><img src="images/menu_nubrulee.png" alt="nubrulee"></a>
+            <div class="text">
+                <a href="#nubrulee">
+                    <h3 class="title">NU BRULEE</h3>
+                    <span class="name">누 브륄레</span>
+                    <span class="price">7,000원</span>
+                    <p>
+                        묵직한 바닐라 크림에 시나몬과 위스키 향을 더한 누데이크스타일 크림 브륄레
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 7 -->
+        <div class="content">
+            <a href="#colosseoSmall"><img src="images/menu_colosseomini.jpg" alt="colosseoSmall"></a>
+            <div class="text">
+                <a href="#colosseoSmall">
+                    <h3 class="title">COLOSSEO SMALL</h3>
+                    <span class="name">콜로세오 스몰</span>
+                    <span class="price">12,000원</span>
+                    <p>
+                        초콜릿 크러스트와 마스카포네 필링으로 만들어진 치즈 케이크 '콜로세오'의 스몰 사이즈 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 8 -->
+        <div class="content">
+            <a href="#fogSmall"><img src="images/menu_fogmini.jpg" alt="fogSmall"></a>
+            <div class="text">
+                <a href="#fogSmall">
+                    <h3 class="title">FOG SMALL</h3>
+                    <span class="name">포그 스몰</span>
+                    <span class="price">13,000원</span>
+                    <p>
+                        블랙 올리브 시트에 체다 치즈 크림을 샌딩한 옴브레 케이크 '포그'의 스몰 사이즈 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 9 -->
+        <div class="content">
+            <a href="#oik"><img src="images/menu_oik.jpg" alt="oik"></a>
+            <div class="text">
+                <a href="#oik">
+                    <h3 class="title">OIK</h3>
+                    <span class="name">오이크</span>
+                    <span class="price">12,000원</span>
+                    <p>
+                        애플민트와 딜의 향이 은은한 크림에 오이 젤과 토마토 잼을 더해 청량한 무스 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 10 -->
+        <div class="content">
+            <a href="#chouxCan"><img src="images/menu_chouxcan.jpg" alt="chouxCan"></a>
+            <div class="text">
+                <a href="#chouxCan">
+                    <h3 class="title">CHOUX CAN</h3>
+                    <span class="name">슈캔</span>
+                    <span class="price">12,000원</span>
+                    <p>
+                        캔 모양의 슈 속에 옥수수 크림과 캐러맬 소스가 담긴 고소하고 달콤한 디저트
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 11 -->
+        <div class="content">
+            <a href="#pieta"><img src="images/menu_pieta.jpg" alt="pieta"></a>
+            <div class="text">
+                <a href="#pieta">
+                    <h3 class="title">PIETA</h3>
+                    <span class="name">피에타</span>
+                    <span class="price">12,000원</span>
+                    <p>
+                        부드러운 유자 크림과 치즈 크림 무스에 바삭한 레이어를 더해 다양한 식감을 선사하는 케이크
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>    <!-- //#smallDessert -->
+    
+    <!-- 6 : etc. -->
+    <div id="etc" class="contents">
+        <!-- 1 -->
+        <div class="content">
+            <a href="#wasabi"><img src="images/menu_wasabi.png" alt="wasabi"></a>
+            <div class="text">
+                <a href="#wasabi">
+                    <h3 class="title">WASABI BUTTER</h3>
+                    <span class="name">와사비 버터</span>
+                    <span class="price">13,000원</span>
+                    <p>
+                        생와사비로 알싸한 맛을 더한 독특한 와사비 버터
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="content">
+            <a href="#truffle"><img src="images/menu_trufflebutter.jpg" alt="truffle"></a>
+            <div class="text">
+                <a href="#truffle">
+                    <h3 class="title">TRUFFLE BUTTER</h3>
+                    <span class="name">트러플 버터</span>
+                    <span class="price">15,000원</span>
+                    <p>
+                        트러플 오일과 블랙 올리브의 풍미가 조화롭게 어우러지는 트러플 버터
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="content">
+            <a href="#mustard"><img src="images/menu_mustard.jpg" alt="mustard"></a>
+            <div class="text">
+                <a href="#mustard">
+                    <h3 class="title">WHOLE GRAIN MUSTARD BUTTER</h3>
+                    <span class="name">홀 그레인 머스타드 버터</span>
+                    <span class="price">13,000원</span>
+                    <p>
+                        씨겨자를 넣어 무겁지 않은 맛이 돋보이는 홀그레인 머스타드 버터
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>    <!-- //#etc. -->
+
+    
+    <div id="tab">
+        <!-- 탭 메뉴 -->
+        <ul id="tabmenu" class="clearfix">
+            <li class="on" data-target="#pickup">PICK UP SERVICE</li>
+            <li data-target="#packaging">PACKAGING</li>
+            <li data-target="#reservation">RESERVATION</li>
+        </ul>
+
+
+        <!-- 1 : 픽업 서비스 -->
+        <div id="pickup" class="tab_content on">
+            <div class="tab_img"><span>pickup</span></div>
+            <div class="tab_text">
+                <h3>PICK UP SERVICE</h3>
+                <span>매장 픽업서비스</span>
+                <p>
+                    매장 방문 전에 미리 원하는  메뉴를 주문/결제 할 수 있는 서비스 입니다. 알림에 맞추어 매장에 도착하시면 메뉴를 바로 픽업할 수 있습니다.   
+                    <a href="#"><span>MORE</span></a>
+                </p>
+            </div>            <!-- //.tab_text -->
+        </div>        <!-- //#tab_perfume -->
+
+        <!-- 2 : 포장 -->
+        <div id="packaging" class="tab_content">
+            <div class="tab_img"><span>packaging</span></div>
+            <div class="tab_text">
+                <h3>PACKAGING</h3>
+                <span>포장 서비스</span>
+                <p>
+                    특별한 날 특별한 분을 위해 포장이 가능합니다. 케이크를 포함한 모든 디저트 포장이 가능합니다. 누데이크 전용 패키지에 포장하여 안전하게 선물해보세요!
+                    <a href="#"><span>MORE</span></a>
+                </p>
+            </div>            <!-- //.tab_text -->
+        </div>        <!-- //#tab_perfume -->
+
+        <!-- 3 : 예약 서비스 -->
+        <div id="reservation" class="tab_content">
+            <div class="tab_img"><span>reservation</span></div>
+            <div class="tab_text">
+                <h3>RESERVATION</h3>
+                <span>예약 서비스</span>
+                <p>
+                    매장에 나오지 않는 디저트는 픽업일 기준 최소 2일 전 예약시 가능합니다. 단체 주문의 경우 최소 7일 전 예약시 구매 가능합니다.
+                    <a href="#"><span>MORE</span></a>
+                </p>
+            </div>            <!-- //.tab_text -->
+        </div>        <!-- //#tab_perfume -->
+    </div>    <!-- // #tab -->
+    
+    <footer>
+        <div id="footer">
+            <p>© 2022 NUDAKE</p>
+            <div>
+                <p>
+                    주)아이아이컴바인드 | 사업자등록번호: 119-86-38589 | 대표자: 김한국 | 서울특별시 마포구 어울마당로5길 41 | 대표번호: 1644-1246 | 이메일: cs@nudake.com
+                    개인정보 보호 책임자: 정태호 | 호스팅 서비스 사업자: Aws | 통신판매업신고: 제 2014-서울마포-1050 호 <a href="#">(사업자정보확인)</a> | 개인정보처리방침 | 이용약관
+                </p>
+                <p>
+                    고객님의 안전한 현금자산 거래를 위하여 우리은행과 채무지급보증계약을 체결하여 보장해드리고 있습니다. <a href="#">서비스 가입사실 확인</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

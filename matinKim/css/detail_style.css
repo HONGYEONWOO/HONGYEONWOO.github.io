@@ -1,0 +1,209 @@
+/* ===== content_box ===== */
+#content_box{
+    width: 1200px;
+    margin: 30px auto 150px auto;
+}
+#content_box>img{
+    float: left;
+    width: 50%;
+    display: block;
+}
+#content_box>div{
+    float: left;
+    width: 47%;
+    margin-left: 3%;
+}
+#content{
+    padding-top: 2.5%;
+}
+
+/* === #content > profile === */
+#profile>a{
+    float: left;
+    width: 20%;
+    height: 112.8px;
+    border-radius: 50%;
+
+    background: url("../images/profile.jpg") no-repeat;
+    background-size: cover;
+    margin-right: 2%;
+}
+#profile>a>span{
+    display: none;
+}
+#profile>div{
+    float: left;
+    width: 78%;
+    line-height: 1.8em;
+    padding: 1.2em 1em;
+    box-sizing: border-box;
+}
+#profile h3{
+    font-size: 1.5em;
+    font-family: 'Noto Serif KR', serif;
+}
+#profile span{
+    float: right;
+    margin-top: 20px;
+}
+
+/* === #content > info === */
+#info{
+    margin: 10% auto;
+    width: 90%;
+    line-height: 1.8em;
+    font-family: 'Noto Serif KR', serif;
+}
+#info>li::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#info>li>span{
+    float: left;
+
+    display: block;
+    width: 25%;
+
+    font-family: AppleB, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9em;    
+}
+#info>li>a{
+    float: left;
+    width: 75%;
+}
+
+/* === #content > product === */
+#product>li{
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+#product>li:last-child{
+    margin-right: 0;
+}
+#product img{
+    display: block;
+    width: 100%;
+}
+.text{
+    padding: 2em 0.5em;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 0.9em;
+    line-height: 1.7em;
+}
+.text span{
+    display: block;
+}
+.color{
+    width: 50%;
+    font-size: 0.8em;
+}
+.price{
+    text-align: right;
+}
+#buy{
+    position: relative;
+    display: block;
+    width: 70%;
+    height: 30px;
+    
+    border: 1px solid #000;
+    box-sizing: border-box;
+    
+    font-size: 0.7em;
+    margin: 30px auto 0 auto;
+
+    overflow: hidden;
+}
+#buy::after{
+    content: "";
+    display: block;
+
+    position: absolute;
+    bottom: -0.5px;
+    left: 0;
+
+    width: 100%;
+    height: 0;
+    background-color: #000;
+
+    transition-duration: 200ms;
+}
+#buy span{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    white-space: nowrap;
+
+    z-index: 1;
+}
+#buy:hover::after{
+    height: 105%;
+}
+#buy:hover>span{
+    color: #fff;
+}
+
+
+/* ===== container ===== */
+#container{
+    position: relative;
+    width: 130%;
+    height: 370px;
+    margin-left: -30%;
+    margin-bottom: 150px;
+
+    overflow: hidden;
+}
+#container>.button>span{
+    display: none;
+}
+#slide{
+    width: 4012px;
+}
+#slide>li{
+    float: left;
+    margin-right: 10px;
+}
+#slide>li img{
+    transition: all 500ms;
+}
+#slide>li img:hover{
+    transform: scale(95%);
+}
+
+#container>.button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    border: 1.5px solid transparent;
+    overflow: hidden;
+
+    z-index: 1;
+    transition-duration: 100ms;
+}
+#container>.button:hover{
+    cursor: pointer;
+    border: 1.5px solid #fff;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#slide_prev{
+    left: 25%;
+
+    background: url("../images/direction_pre.png") no-repeat 50%;
+    background-size: 35%;
+}
+#slide_next{
+    right: 2%;
+
+    background: url("../images/direction_next.png") no-repeat 50%;
+    background-size: 35%;
+}

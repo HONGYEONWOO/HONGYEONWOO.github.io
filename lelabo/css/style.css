@@ -1,0 +1,472 @@
+/* === font === */
+@font-face {
+    font-family: Bebas;
+    src: url('../../font/BebasNeue-Regular.woff');
+  }
+@font-face {
+    font-family: AppleM;
+    src: url('../../font/AppleSDGothicNeoM.woff');
+  }
+@font-face {
+    font-family: AppleB;
+    src: url('../../font/AppleSDGothicNeoB.woff');
+  }
+@font-face {
+    font-family: AppleL;
+    src: url('../../font/AppleSDGothicNeoL.woff');
+  }
+@font-face {
+    font-family: Yedangche;
+    src: url('../../font/YeDangche.woff');
+}
+
+/* === keyframes === */
+@keyframes leftMove{
+  from{
+      transform: translateX(50px);
+      opacity: 0;
+  }
+  to{
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes rightMove{
+    from{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes upMove{
+    from{
+        transform: translateY(80px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+body{
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: AppleM, sans-serif;
+}
+/* === 초기화 === */
+a{
+    text-decoration: none;
+    color: #333;
+}
+.button{
+    border: none;
+    outline: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ===== notice ===== */
+#notice{
+    position: relative;
+    width: 100%;
+    height: 50px;
+
+    background-color: #fff;
+
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+
+    line-height: 30px;
+}
+#notice>div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+}
+#notice_container{
+    float: left;
+    width: 90%;
+
+    overflow: hidden;
+
+}
+#notice_container>ul{
+    width: 300%;
+    font-size: 0.9em;
+    text-align: center;
+}
+#notice_container>ul>li{
+    float: left;
+    width: 33.333%;
+}
+#notice>div>button{
+    float: left;
+    width: 5%;
+    height: 30px;
+    opacity: 0.5;
+}
+#notice>div>button:hover{
+    opacity: 1;
+    transition-duration: 100ms;
+}
+#notice_prev{
+    background: url("../images/notice_prev.png") no-repeat;
+    background-size: 8px;
+    background-position: center;
+}
+#notice_next{
+    background: url("../images/notice_next.png") no-repeat;
+    background-size: 8px;
+    background-position: center;
+}
+#notice>div>button>span{
+    display: none;
+}
+
+/* ===== main ===== */
+#main{
+    position: relative;
+}
+#nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 20px;
+
+    z-index: 10;
+}
+#logo{
+    position: relative;
+    float: left;
+    width: 10%;
+    height: 60px;
+    margin-left: 5%;
+
+}
+#logo>a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+    width: 85%;
+}
+#logo>a>img{
+    display: block;
+    width: 100%;
+}
+
+#user{
+    float: left;
+    width: 15%;
+    line-height: 60px;
+    margin-right: 5%;
+    z-index: 1;
+}
+#user>li{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+#user>li:first-child::after{
+    content: "｜";
+    display: block;
+    float: right;
+    clear: both;
+    color: #fff;
+}
+#user>li>a{
+    color: #fff;
+}
+
+/* === #main > menu (web) === */
+#menu{
+    float: left;
+    width: 55%;
+    line-height: 60px;
+    margin: 0 5%;
+
+    z-index: 1;
+}
+#menu>li{
+    float: left;
+    width: 14.285%;
+    text-align: center;
+    color: #fff;
+}
+#menu>li:hover{
+    cursor: pointer;
+}
+#menu>li>a{
+    display: block;
+    width: 95%;
+    color: #fff;
+}
+#menu>li:last-child>a{
+    width: 100%;
+}
+
+
+/* === #main > menu (mobile) === */
+#mobile{
+    display: none;
+}
+#mo_icon{
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+}
+#mo_icon>li{
+    float: left;
+    width: 2em;
+    height: 2em;
+
+    margin-right: 1em;
+}
+#mo_icon>li>a{
+    display: block;
+    height: 100%;
+}
+#mo_icon>li span{
+    display: none;
+}
+#mo_icon>li:hover{
+    cursor: pointer;
+}
+
+#mo_icon>li:nth-child(1){background: url("../images/icon_login.png") no-repeat center / contain;}
+#mo_icon>li:nth-child(2){background: url("../images/icon_cart.png") no-repeat center / contain;}
+#mo_icon>li:nth-child(3){background: url("../images/icon_menu.png") no-repeat center / contain;}
+#mo_show{
+    position: absolute;
+
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#mo_hide{
+    float: left;
+    width: 40%;
+    height: 95vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#mo_hide span{
+    display: none;
+}
+#mo_menu{
+    position: relative;
+    float: left;
+    
+    width: 60%;
+    height: 95vh;
+
+    padding: 6em 2em;
+    box-sizing: border-box;
+
+    background-color: rgba(0, 0, 0, 0.95);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+
+    line-height: 1.6em;
+}
+#mo_menu a{
+    color: #fff;
+}
+#mo_menu>li{
+    margin-bottom: 1em;
+}
+#mo_menu>li:hover{
+    cursor: pointer;
+}
+#mo_menu>li:last-child{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 3em;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding-top: 1.5em;
+}
+#mo_menu>li:last-child a{
+    display: block;
+    float: left;
+    width: 33.333%;
+    font-size: 0.85em;
+    text-align: center;
+}
+#mo_menu>li:last-child a:not(:last-child)::after{
+    content: "|";
+    font-size: 0.5em;
+    display: block;
+    color: rgba(255, 255, 255, 0.5);
+    float: right;
+}
+.mo_title{
+    font-size: 1.4em;
+    line-height: 2em;
+}
+.mo_submenu{
+    display: none;
+
+    position: relative;
+    margin: 0.5em 0 3em 0;
+    padding-top: 1em;
+
+
+    animation-name: mobileMenu;
+    animation-duration: 600ms;
+    animation-timing-function: ease-out;
+}
+@keyframes mobileMenu{
+    from{
+        transform: translateY(-10%);
+    }
+    to{
+        transform: translateY(0);
+    }
+  }
+.mo_submenu::after{
+    position: absolute;
+
+    content: "";
+    display: block;
+    clear: both;
+
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 1px;
+
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+/* === #main > dropdown === */
+#dropdown{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-top: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: AppleL, sans-serif;
+    font-size: 0.9em;
+
+    display: none;
+    z-index: 1;
+}
+#dropdown_box{
+    width: 55%;
+    margin: 2.5em 15% 5em 20%;
+    font-size: 1em;
+    line-height: 2em;
+    text-align: center;
+}
+#dropdown_box>ul{
+    float: left;
+    width: 14.285%;
+}
+#dropdown_box a{
+    color: #fff;
+    opacity: 0.7;
+}
+#dropdown_box a:hover{
+    opacity: 1;
+}
+.blank>li{
+    visibility: hidden;
+}
+
+/* ===== #footer =====*/
+footer{
+    width: 100%;
+    background-color: #333;
+    padding: 3em 0 5em 0;
+}
+#footer{
+    width: 80%;
+    margin: 0 auto;
+}
+#footer_logo{
+    float: left;
+    width: 20%;
+}
+#footer_logo>img{
+    display: block;
+    width: 60%;
+
+    min-width: 100px;
+}
+#footer_content{
+    float: left;
+    width: 80%;
+}
+
+#footer_menu{
+    float: left;
+    width: 70%;
+}
+#footer_menu>li{
+    float: left;
+    width: 25%;
+    line-height: 2.5em;
+    font-size: 0.9em;
+}
+#footer_menu>li>span{
+    color: #fff;
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 1.5em;
+}
+#footer_menu a{
+    font-family: AppleL, sans-serif;
+    color: #fff;
+    opacity: 0.8;
+}
+
+#footer_news{
+    float: left;
+    width: 30%;
+}
+#footer_news>p{
+    line-height: 2em;
+    font-size: 0.9em;
+    font-family: AppleL, sans-serif;
+    color: #fff;
+    text-align: justify;
+}
+#footer_news>p>span{
+    display: block;
+    font-size: 1.1em;
+    font-family: AppleM, sans-serif;
+    margin-bottom: 1.5em;
+}
+#email{
+    width: 100%;
+    margin-top: 1.5em;
+    font-family: AppleL, sans-serif;
+    background-color: transparent;
+    border: 1.5px solid #fff;
+    border-radius: 2px;
+    line-height: 2em;
+    box-sizing: border-box;
+}
+

@@ -1,0 +1,216 @@
+/* ===== content_box ===== */
+#content_box{
+    width: 80%;
+    margin: 0 10%;
+    font-family: 'Noto Serif KR', serif;
+    min-width: 1200px;
+    margin-bottom: 200px;
+}
+#content_box>div{
+    float: left;
+}
+
+.content a{
+    width: 100%;
+}
+.content img{
+    display: block;
+    width: 100%;
+    transition: all 500ms;
+}
+.content img:hover{
+    transform: scale(95%);
+}
+.id{
+    display: block;
+    padding: 1.5em 1em 2em 1em;
+    box-sizing: border-box;
+}
+.id::after{
+    content: "+";
+    display: block;
+    float: right;
+    text-align: right;
+    width: 10%;
+    clear: both;
+}
+
+#left, #right{
+    width: 25%;
+    margin-top: 10%;
+}
+
+/* === content_box > left === */
+#left{
+    animation-name: downMove;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+}
+@keyframes downMove{
+    from{
+        transform: translateY(-2%);
+    }
+    50%{
+        transform: translateY(2%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+/* === content_box > right === */
+#right{
+    animation-name: upMove;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+}
+@keyframes upMove{
+    from{
+        transform: translateY(2%);
+    }
+    50%{
+        transform: translateY(-2%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+/* === content_box > mid === */
+#mid{
+    width: 48%;
+    margin: 0 1%;
+}
+#mid .content{
+    float: left;
+    width: 49%;
+}
+#mid>div:nth-child(odd):not(:first-child){
+    margin-right: 2%;
+}
+#main_content>a{
+    position: relative;
+    width: 100%;
+    display: block;
+    margin-bottom: 2%;
+}
+#main_content>a>img{
+    width: 100%;
+}
+#main_content .id{
+    position: absolute;
+    bottom: 0.5em;
+
+    width: 100%;
+
+    padding: 1em;
+    font-size: 1.1em;
+    color: #000;
+}
+
+#text{
+    position: relative;
+    width: 95%;
+    margin: 10% auto;
+    padding-top: 30px;
+}
+#text>h3{
+    position: absolute;
+    top: -15px;
+    right: 0;
+
+    font-family: 'Tiro Tamil', serif;
+    font-size: 6em;
+    text-align: right;
+
+    opacity: 0;
+    z-index: 1;
+}
+#text>h3.move{
+    opacity: 1;
+
+    animation-name: downMove;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+}
+@keyframes downMove{
+    from{
+        transform: translateY(50px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+#text>h2{
+    font-family: Bebas, sans-serif;
+    font-size: 8em;
+    color: #e64773;
+
+    opacity: 0;
+}
+#text>h2.move{
+    opacity: 1;
+
+    animation-name: upMove;
+    animation-duration: 600ms;
+    animation-timing-function: ease-out;
+}
+@keyframes upMove{
+    from{
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+#text>p{
+    width: 90%;
+    margin: 1em auto 2em auto;
+
+    text-align: center;
+    line-height: 1.7em;
+    font-family: AppleM, sans-serif;
+
+    opacity: 0;
+    transition-duration: 300ms;
+}
+#text .button{
+    width: 40%;
+    margin: 30px auto;
+    display: block;
+}
+#text .button>a{
+    position: relative;
+    display: block;
+    line-height: 3em;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 1.5em;
+    font-family: 'Noto Serif KR', serif;
+    text-indent: 1.5em;
+
+    transition-duration: 100ms;
+}
+#text .button>a::after{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+
+    display: block;
+    content: "";
+
+    width: 1.2em;
+    height: 1.2em;
+
+    background: url("../images/instagram_icon.png") no-repeat;
+    background-size: contain;
+}
+#text .button:hover>a{
+    background-color: #000;
+    color: #fff;
+}
+#text .button:hover>a::after{
+    background: url("../images/instagram_icon_wh.png") no-repeat;
+    background-size: contain;
+}
