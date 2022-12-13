@@ -1,0 +1,249 @@
+/* === font === */
+@font-face {
+    font-family: AppleL;
+    src: url('../font/AppleSDGothicNeoL.woff');
+  }
+@font-face {
+    font-family: AppleM;
+    src: url('../font/AppleSDGothicNeoM.woff');
+  }
+@font-face {
+    font-family: AppleB;
+    src: url('../font/AppleSDGothicNeoB.woff');
+  }
+@font-face{
+    font-family: SAONARA;
+    src: url("../font/MADE-SAONARA-PERSONAL-USE.woff");
+}
+
+html{height: 100%;}
+body{
+    height: 100%;
+    background-color: #dedcd0;
+    color: #333;
+    font-family: AppleM, sans-serif;
+}
+button{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ===== main ===== */
+#main{
+    position: relative;
+
+    height: 100%;
+    background: url(../images/bg.png);
+
+    z-index: 10;
+
+    overflow: hidden;
+}
+#main_img>li{
+    float: left;
+    width: 200px;
+    margin: 5px;
+}
+#main_img img{
+    display: block;
+    width: 100%;
+}
+#main_img .main_title{
+    width: 620px;
+    height: 200px;
+    overflow: hidden;
+}
+.blank{
+    visibility: hidden;
+}
+
+#main_img>li:last-child>a{
+    display: block;
+    width: 200px;
+    height: 200px;
+    background: url("../images/main_contact_01.png") no-repeat;
+    background-size: contain;
+    transition-duration: 400ms;
+}
+#main_img>li:last-child>a:hover{
+    background: url("../images/main_contact_02.png") no-repeat;
+    background-size: contain;
+
+    box-shadow: 4px 4px 4px rgba(100, 100, 100, 0.5);
+    cursor: pointer;
+}
+
+/* ===== contents ====== */
+#contents{
+    position: relative;
+    min-width: 1300px;
+    margin: 0 auto;
+}
+
+#logo{
+    position: fixed;
+    top: 70px;
+    right: 2%;
+
+    display: block;
+    width: 100px;
+    height: 100px;
+
+    background: url("../images/logo.png") no-repeat;
+    background-size: contain;
+
+    animation-name: effect;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-play-state: running;
+
+    z-index: 1;
+}
+@keyframes effect{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#logo span{
+    display: none;
+}
+
+/* === #contents > nav === */
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    line-height: 50px;
+    
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+
+    background-color: #000;
+    border-bottom: 1px solid #44413a;
+
+    z-index: 1;
+
+    min-width: 1300px;
+}
+nav h3{
+    float: left;
+    margin-left: 2%;
+    font-size: 1.2em;
+}
+nav a{
+    color: #fff;
+}
+#nav{
+    float: right;
+    width: 30%;
+
+    margin-right: 2%;
+}
+#nav>li{
+    float: left;
+    position: relative;
+    width: 25%;
+    text-align: center;
+    transition-duration: 100ms;
+}
+#nav>li:hover::after{
+    position: absolute;
+    top: 0.3em;
+    left: 0;
+    right: 0;
+    
+    content: "·";
+    display: block;
+    clear: both;
+    
+    line-height: 0em;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.title{
+    font-family: 'Assistant', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+
+    font-size: 2em;
+
+    color: #000;
+}
+
+/* sub */
+#menu{
+    position: relative;
+    height: 200px;
+}
+#menu a{
+    display: block;
+    line-height: 1.5em;
+    
+    text-transform: uppercase;
+
+    text-align: right;
+    font-family: AppleB, sans-serif;
+
+    color: #000;
+    letter-spacing: -0.5px;
+
+    transition-duration: 100ms;
+}
+#menu a:hover{
+    opacity: 0.6;
+}
+#menu>h1{
+    text-align: right;
+
+    font-family: SAONARA, serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+#menu>ul{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#move_main{
+    position: absolute;
+    top: -200%;
+    right: 5%;
+    font-size: 1.6em;
+    font-family: SAONARA, serif;
+    letter-spacing: 4px;
+    color: #fff;
+    white-space: nowrap;
+
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+
+    animation-name: move;
+    animation-duration: 15s;
+    animation-iteration-count:infinite;
+	animation-timing-function:linear; 
+}
+@keyframes move{
+    from{top: -200%;}
+    to{top: -100%;}
+}

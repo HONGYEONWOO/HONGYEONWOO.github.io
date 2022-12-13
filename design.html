@@ -6,42 +6,49 @@
     <title>HongYeonWoo_Design</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/design_style.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="js/design_script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- 01 -->
     <div id="main" class="num">
-        <ul id="main_img" class="height">
-            <li class="photo"><img src="images/design_img_01.png" alt="photo"></li>
-            <li class="photo"><img src="images/design_img_02.png" alt="photo"></li>
-            <li class="photo blank"><img src="images/main_img_blank.png" alt="photo"></li>
-            <li class="photo blank"><img src="images/main_img_blank.png" alt="photo"></li>
-            <li class="title"><img src="images/design_img_03.png" alt="photo"></li>
+        <ul id="main_img" class="clearfix">
+            <li><img src="images/design_img_01.png" alt="photo"></li>
+            <li><img src="images/design_img_02.png" alt="photo"></li>
+            <li class="blank"><img src="images/main_img_blank.png" alt="photo"></li>
+            <li class="blank"><img src="images/main_img_blank.png" alt="photo"></li>
+            <li class="main_title"><img src="images/design_img_03.png" alt="photo"></li>
             <li id="menu">
                 <h1>02</h1>
                 <ul>
-                    <li><a href="#design_page">UIUX DESIGN</a></li>
+                    <li><a href="#uiux">UIUX DESIGN</a></li>
                     <li><a href="#fashion">FASHION DESIGN</a></li>
                     <li><a href="#drawing">DRAWING</a></li>
                 </ul>
             </li>
-            <li class="photo blank"><img src="images/main_img_blank.png" alt="photo"></li>
-            <li class="photo"><img src="images/design_img_04.png" alt="photo"></li>
-            <li class="photo"><img src="images/design_img_05.png" alt="photo"></li>
-            <li class="photo"><a href="index.html"></a></li>
+            <li class="blank"><img src="images/main_img_blank.png" alt="photo"></li>
+            <li><img src="images/design_img_04.png" alt="photo"></li>
+            <li><img src="images/design_img_05.png" alt="photo"></li>
+            <li><a href="index.html"></a></li>
         </ul>
-        <div id="logo">
+        <div id="move_main">
             <span>
                 HONGYEONWOO PORTFOLIO   HONGYEONWOO PORTFOLIO   HONGYEONWOO PORTFOLIO   HONGYEONWOO PORTFOLIO   HONGYEONWOO PORTFOLIO   HONGYEONWOO PORTFOLIO   HONGYEONWOO PORTFOLIO   
             </span>
         </div>
     </div>    <!-- //main -->
-
+    
     <!-- 더보기 -->
-    <div class="more" >            <!-- 박스 바깥쪽 검정 부분 -->
-        <div>     <!-- 흰색박스 크기 고정 700*400 -->
-            <ul class="height">    <!-- 이미지 슬라이드 가로 700짜리 -->
+    <div class="more" >
+        <div>
+            <ul class="height">
                 <li><img src="images/banner_01.jpg" alt="banner"></li>
                 <li><img src="images/banner_02.jpg" alt="banner"></li>
                 <li><img src="images/banner_03.jpg" alt="banner"></li>
@@ -55,133 +62,127 @@
         <button id="more_next"><img src="images/direction_next.png" alt="next"></button>
         <button id="close"><img src="images/close.png" alt="close"></button>
     </div>
-    
-    <div id="content">
-        <!-- sidebar -->
-        <aside id="sidebar">
-            <img src="images/side_02.png" alt="side">
-        </aside>
 
-        <!-- nav -->
-        <nav>
-            <ul id="nav" class="height">
-                <li><a href="index.html" class="circle"><span>Main</span></a></li>
-                <li><a href="index.html#profile"  class="circle"><span>About</span></a></li>
-                <li><a href="design.html" class="circle"><span>Design</span></a></li>
-                <li><a href="web_design.html" class="circle"><span>Web<br>Design</span></a></li>
+    <div id="contents">
+        <a href="#" id="logo"><span>logo</span></a>
+
+        <nav class="clearfix">
+            <h3><a href="index.html">HongYeonWoo portfolio</a></h3>
+            <ul id="nav" class="clearfix">
+                <li><a href="index.html"><span>Main</span></a></li>
+                <li><a href="index.html#profile"><span>About</span></a></li>
+                <li><a href="design.html"><span>Design</span></a></li>
+                <li><a href="web_design.html"><span>Web Design</span></a></li>
             </ul>
-        </nav>
+        </nav>        <!-- //#nav -->
 
-        <!-- 02 -->
-        <div class="page num" id="design_page">
-            <div id="design" class="height">
-                <div id="banner">
-                    <div class="container">
-                        <ul>
-                            <li><img src="images/banner_01.jpg" alt="banner"></li>
-                            <li><img src="images/banner_02.jpg" alt="banner"></li>
-                            <li><img src="images/banner_03.jpg" alt="banner"></li>
-                            <li><img src="images/banner_04.jpg" alt="banner"></li>
-                            <li><img src="images/banner_05.jpg" alt="banner"></li>
-                            <li><img src="images/banner_06.jpg" alt="banner"></li>
-                            <li><img src="images/banner_07.jpg" alt="banner"></li>
-                        </ul>
-                    </div>
-                    <div class="text">
-                        <h2>BANNER DESIGN</h2>
-                        <p>각 브랜드 제품 배너 이미지 입니다.</p>
-                        <ul>
-                            <li><span>제 작 물</span>배너이미지</li>
-                            <li><span>기 여 도</span>기획 100%, 디자인 100%</li>
-                        </ul>
-                        <div id="button_banner" class="button">MORE VIEW</div>
-                    </div>
-                </div>                <!-- //banner -->
-    
-                <div id="popol" class="xd">
-                    <div class="container">
-                        <ul>
-                            <li><img src="images/popol_01.jpg" alt="popol"></li>
-                            <li><img src="images/popol_02.jpg" alt="popol"></li>
-                            <li><img src="images/popol_03.jpg" alt="popol"></li>
-                        </ul>
-                    </div>
-                    <div class="text">
-                        <h2>PORTFOLIO</h2>
-                        <p>Adobe XD 프로그램을 이용하여 제작한 모바일 사이즈 포트폴리오 입니다.</p>
-                        <ul>
-                            <li><span>제 작 물</span>메인이미지, 서브이미지</li>
-                            <li><span>기 여 도</span>기획 100%, 디자인 100%</li>
-                        </ul>
-                        <div class="button">
-                            <a href="https://xd.adobe.com/view/12d1d99b-832f-44cb-b7a7-a4a5148e44b6-4782/" target="_blank">MORE VIEW</a>
+        <!-- 2페이지 -->
+        <div id="uiux" class="page num">
+            <!-- 첫줄 -->
+            <div id="banner" class="clearfix">
+                <h2 class="title">Banner Design</h2>
+                <div id="banner_slide" class="container">
+                    <ul class="clearfix">
+                        <li><img src="images/banner_01.jpg" alt="banner"></li>
+                        <li><img src="images/banner_02.jpg" alt="banner"></li>
+                        <li><img src="images/banner_03.jpg" alt="banner"></li>
+                        <li><img src="images/banner_04.jpg" alt="banner"></li>
+                        <li><img src="images/banner_05.jpg" alt="banner"></li>
+                        <li><img src="images/banner_06.jpg" alt="banner"></li>
+                        <li><img src="images/banner_07.jpg" alt="banner"></li>
+                    </ul>
+                </div>            <!-- //#banner_slide -->
+                <div class="text">
+                    <p>각 브랜드 제품 배너 이미지 입니다.</p>
+                    <ul class="level">
+                        <li><span>제 작 물</span>배너이미지</li>
+                        <li><span>기 여 도</span>기획 100%, 디자인 100%</li>
+                    </ul>
+                    <div id="button_banner" class="button"><span>MORE VIEW</span></div>
+                </div>
+            </div>
+            <!-- 두번째 줄 -->
+            <div id="xd" class="clearfix">
+                <div id="popol_img">
+                    <span>popol img</span>
+                </div>
+
+                <div id="mid">
+                    <!-- 제목 -->
+                    <h2 class="title">Mobile design</h2>
+                    <!-- 내용 01+02 -->
+                    <div id="mid_text">
+                        <div class="text">
+                            <div class="clearfix">
+                                <h2 class="mid_title"><span>01</span>모바일 포트폴리오</h2>
+                                <a href="https://xd.adobe.com/view/34879bad-981e-4b98-a8d2-e1913f123e57-61d4/?fullscreen&hints=off" target="_blank" class="button"><span>01</span></a>
+                            </div>
+                            <p>Adobe XD 프로그램을 이용하여 제작한 모바일 사이즈 포트폴리오 입니다.</p>
                         </div>
-                    </div>
-                </div>                <!-- //popol -->
-    
-                <div id="pizza" class="xd">
-                    <div class="container">
-                        <ul>
-                            <li><img src="images/pizza_01.jpg" alt="pizza"></li>
-                            <li><img src="images/pizza_02.jpg" alt="pizza"></li>
-                            <li><img src="images/pizza_03.jpg" alt="pizza"></li>
-                        </ul>
-                    </div>
-                    <div class="text">
-                        <h2>MOBILE APP DESIGN</h2>
-                        <p>Adobe XD 프로그램을 이용하여 제작한 파파존스 어플리케이션 디자인 입니다.</p>
-                        <ul>
-                            <li><span>제 작 물</span>메인이미지, 서브이미지</li>
-                            <li><span>기 여 도</span>기획 100%, 디자인 100%</li>
-                        </ul>
-                        <div class="button">
-                            <a href="https://xd.adobe.com/view/34879bad-981e-4b98-a8d2-e1913f123e57-61d4/?fullscreen&hints=off" target="_blank">MORE VIEW</a>
+
+                        <div class="text">
+                            <div class="clearfix">
+                                <h2 class="mid_title"><span>02</span>파파존스 어플리케이션</h2>
+                                <a href="https://xd.adobe.com/view/12d1d99b-832f-44cb-b7a7-a4a5148e44b6-4782/" target="_blank" class="button"><span>02</span></a>
+                            </div>
+                            <p>Adobe XD 프로그램을 이용하여 제작한 파파존스 어플리케이션 디자인 입니다.</p>
                         </div>
-                    </div>
-                </div>            <!-- //pizza -->
-            </div>    <!-- //design -->
-        </div>        <!-- //02_page -->
-    
+                    </div>                    <!-- //#mid_text -->
+                </div>                <!-- //#mid -->
+
+                <div id="pizza_img" class="clearfix">
+                    <span>pizza img_01</span>
+                    <span>pizza img_02</span>
+                    <span>pizza img_03</span>
+                </div>
+            </div>            <!-- //#xd -->
+        </div>          <!-- //02_#uiux -->
     
         <!-- 03 -->
-        <div id="fashion" class="page num height">
-            <div id="left">
-                <ul id="fashion_box" class="height">
-                        <li><img src="images/fashion_01.jpg" alt="fashion"></li>
-                        <li><img src="images/fashion_02.jpg" alt="fashion"></li>
-                        <li><img src="images/fashion_03.jpg" alt="fashion"></li>
-                  </ul>
-            </div>            <!-- //left -->
-    
-            <div id="right">
-                <div id="right_text">
-                    <h2>FASHION DESIGN</h2>
-                    <p>
-                        뉴트럴(Neutral),<br>어느 한 쪽으로 치우치지 않는 매니쉬함과 페미닌함이 공존하는 디자인 제시하고자 함
-                        <br><br>
-                        젠더리스에 대해 관심이 높아지는 사회 변화에 따라 성별에 구분 없는 디자인을 제시<br>
-                        매니쉬함과 페미닌함이 공존하는 동시에 트렌디함을 반영
-                    </p>
-                    <h2>LIST</h2>
-                    <ul id="list" class="height">
-                        <li>PVC jacket</li>
-                        <li>cago jogger pants</li>
-                        <li>sleeveless top</li>
+        <div id="design" class="page num">
+            <!-- 위쪽 -->
+            <div id="fashion" class="clearfix">
+                <div id="left" class="clearfix">
+                    <ul id="large_img">
+                        <li class="on" id="img_01"><img src="images/fashion_01.jpg" alt="fashion"></li>
+                        <li id="img_02"><img src="images/fashion_02.jpg" alt="fashion"></li>
+                        <li id="img_03"><img src="images/fashion_03.jpg" alt="fashion"></li>
                     </ul>
-                    <ul id="level">
+
+                    <ul id="small_img" class="clearfix">
+                        <li class="on" data-target="#img_01"><img src="images/fashion_01.jpg" alt="fashion"></li>
+                        <li data-target="#img_02"><img src="images/fashion_02.jpg" alt="fashion"></li>
+                        <li data-target="#img_03"><img src="images/fashion_03.jpg" alt="fashion"></li>
+                    </ul>
+                </div>                <!-- //#left -->
+
+                <div id="right">
+                    <h2 class="title">FASHION DESIGN</h2>
+                    <p>
+                        <b>뉴트럴(Neutral)</b>을 주제로 어느 한 쪽으로 치우치지 않는 매니쉬함과 페미닌함이 공존하는 디자인으로
+                        젠더리스에 대해 관심이 높아지는 사회 변화에 따라 성별에 구분 없는 디자인을 제시하였습니다.
+                        매니쉬함과 페미닌함이 공존하는 동시에 트렌디함을 반영했습니다.
+                        <span>* 2019 SS 시즌 기준으로 제작되었습니다.</span>
+                    </p>
+                    
+                    <ul class="level">
+                        <li><span>제 작 물</span>PVC jacket · cago jogger pants · sleeveless top</li>
                         <li><span>기 여 도</span>기획 100%, 디자인 100%, 제작 100%</li>
                     </ul>
+
+                </div>                <!-- //#right -->
+            </div>            <!-- //#fasion -->
+
+            <!-- 아래쪽 -->
+            <div id="drawing" class="clearfix">
+                <div>
+                    <div id="drawing_text">
+                        <h2 class="title">DRAWING</h2>
+                        <a href="https://www.instagram.com/ssgssg_ssgssg/" class="button"><span>@ssgssg_ssgssg</span></a>
+                    </div>
                 </div>
-            </div>            <!-- //right -->
-        </div>        <!-- //03_page -->
-    
-    
-        <!-- 04 -->
-        <div class="page num" id="last">
-            <div id="drawing">
-                <h2>DRAWING</h2>
                 <div id="slide">
-                    <ul class="height">
+                    <ul class="clearfix">
                         <li><img src="images/drawing_01.jpg" alt="drawing"></li>
                         <li><img src="images/drawing_02.jpg" alt="drawing"></li>
                         <li><img src="images/drawing_03.jpg" alt="drawing"></li>
@@ -196,36 +197,50 @@
                         <li><img src="images/drawing_12.jpg" alt="drawing"></li>
                         <li><img src="images/drawing_13.jpg" alt="drawing"></li>
                     </ul>
-                    <button id="prev"></button>
-                    <button id="next"></button>
+                    <button id="prev"><span>prev</span></button>
+                    <button id="next"><span>next</span></button>
                     <a href="https://www.instagram.com/ssgssg_ssgssg/" id="insta"><img src="images/instagram.png" alt="insta"><span>ssgssg_ssgssg</span></a>
                 </div>                <!-- //slide -->
-            </div>            <!-- //drawing -->
-            <footer>
-                <div id="footer" class="height">
-                    <a href="https://www.instagram.com/hngynu/" class="height">
-                        <img src="images/footer_img.png" alt="footer">
-                    </a>
-                    <div id="ft_center" class="height">
-                        <ul>
-                            <li><span>PHONE</span>010 8507 5040</li>
-                            <li><span>E-MAIL</span>h_yonu@naver.com</li>
-                            <li><span>SNS</span>@hngynu(instagram)</li>
-                        </ul>
-                        <p>
-                            이 사이트는 상업적 목적이 아닌 홍연우의 개인 포트폴리오 사이트로 제작되었습니다. 이 사이트에서 사용한 일부 이미지와 폰트 등은 별도의 저작권이 있을 수 있습니다.
-                            <span>© 2022 HongYeonWoo. All rights reserved.</span>
-                        </p>
-                    </div>            <!-- //footer_content -->
-                    <ul id="ft_right" class="height">
-                        <li><a href="index.html">Main</a></li>
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="design.html">Design</a></li>
-                        <li><a href="web_design.html">Web design</a></li>
-                    </ul>            <!-- //footer_menu -->
-                </div>        <!-- //footer -->
-            </footer>
-        </div>        <!-- //04_page -->
+            </div>
+        </div>        <!-- //03_#design -->
     </div>    <!-- //content -->
+    
+    <footer class="num">
+        <ul id="footer" class="clearfix">
+            <!-- 01 -->
+            <li id="ft_web" class="ft_menu">
+                <a href="web_design.html"><span class="footer_title">Web Design</span></a>
+            </li>
+            <!-- 02 -->
+            <li id="ft_main" class="ft_menu">
+                <a href="index.html"><span class="footer_title">Main</span></a>
+            </li>
+            <!-- 03 -->
+            <li id="contact">
+                <div>
+                    <span>img</span>
+                </div>
+                <ul class="clearfix">
+                    <li>
+                        <span class="footer_title">PHONE</span>
+                        <span>010 8507 5040</span>
+                    </li>
+                    <li>
+                        <span class="footer_title">E-MAIL</span>
+                        <span>h_yonu@naver.com</span>
+                    </li>
+                    <li>
+                        <span class="footer_title">SNS</span>
+                        <span><a href="https://www.instagram.com/hngynu/">@hngynu</a></span>
+                    </li> 
+                </ul>
+            </li>
+        </ul>        <!-- //#footer -->
+
+        <p id="copy">
+            이 사이트는 상업적 목적이 아닌 홍연우의 개인 포트폴리오 사이트로 제작되었습니다. 이 사이트에서 사용한 일부 이미지와 폰트 등은 별도의 저작권이 있을 수 있습니다.
+            <span>© 2022 HongYeonWoo. All rights reserved.</span>
+        </p>
+    </footer>
 </body>
 </html>
