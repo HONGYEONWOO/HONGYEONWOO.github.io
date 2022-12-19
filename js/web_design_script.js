@@ -9,7 +9,6 @@ $(function(){
 
     $html.animate({scrollTop : pageIndex * windowHeight},10);
     
-    /* 휠 이벤트 */
     window.addEventListener("wheel",function(event){
         event.preventDefault();
 
@@ -18,11 +17,9 @@ $(function(){
         var delta = event.deltaY;
 
         if(delta>0){
-            /* 스크롤 다운 */
             if(pageIndex >= lastPageIndex) return;
             pageIndex++;
         } else if(delta<0){
-            /* 스크롤 다운 */
             if(pageIndex == 0) return;
             pageIndex--;
         }
@@ -36,5 +33,29 @@ $(function(){
         windowHeight = $window.height();
     });
 
+    var delay = 400;
+
+    $window.on("scroll",function(){
+        if(pageIndex==1){
+            window.setTimeout(function(){
+                $("#lelabo .top p").addClass("on");
+            },delay);
+        }
+        if(pageIndex==2){
+            window.setTimeout(function(){
+                $("#nudake .top p").addClass("on");
+            },delay);
+        }
+        if(pageIndex==3){
+            window.setTimeout(function(){
+                $("#matinkim .top p").addClass("on");
+            },delay);
+        }
+        if(pageIndex==4){
+            window.setTimeout(function(){
+                $("#randys .top p").addClass("on");
+            },delay);
+        }
+    });
 
 });
