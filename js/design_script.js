@@ -39,7 +39,7 @@ $(function(){
     });
 
 
-    var delay = 2500;
+    var delay = 3000;
     var duration = 400;
 
 // ===== content imgslide =====

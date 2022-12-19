@@ -254,6 +254,7 @@
 }
 #small_img li{
     height: 30%; 
+    opacity: 0.7;
     margin-bottom: 5%;
 }
 #small_img li:last-child{
@@ -265,7 +266,6 @@
 #small_img img{
     display: block;
     height: 100%;
-    opacity: 0.7;
 }
 
 /* .on */
@@ -291,6 +291,7 @@
     border: 1px solid #65655E;
 
     box-sizing: border-box;
+    opacity: 1;
 }
 
 #right{
@@ -435,7 +436,7 @@ footer{
 
 #contact div{
     height: 50%;
-    background: url("../images/main_footer_02.jpg") no-repeat center / cover;
+    background: url("../images/main_footer_03.jpg") no-repeat center / cover;
 
     /* 선 */
     box-sizing: border-box;

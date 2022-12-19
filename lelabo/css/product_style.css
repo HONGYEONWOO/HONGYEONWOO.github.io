@@ -1,6 +1,13 @@
 /* ===== #product_main ===== */
+body{
+    overflow-x: hidden;
+}
 #product_main{
     position: relative;
+}
+#product_main div:last-child{
+    width: 100%;
+    overflow: hidden;
 }
 #blank{
     display: block;

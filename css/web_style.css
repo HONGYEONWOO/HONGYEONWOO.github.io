@@ -9,3 +9,238 @@
 }
 #main_img>li:last-child>a{background: url("../images/main_contact_01.png") no-repeat;}
 #main_img>li:last-child>a:hover{background: url("../images/main_contact_02.png") no-repeat;}
+/* 컨텐츠 */
+#contents{
+    position: relative;
+    width: 100%;
+    height: 400%;
+}
+/* 각 페이지 */
+.page{
+    position: relative;
+    width: 100%;
+    height: 25%;
+
+    overflow: hidden;
+
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+/* 텍스트 부분 */
+.text{
+    float: left;
+    width: 45%;
+    height: 100%;
+}
+.top p b{
+    font-family: AppleB, sans-serif;
+}
+.top{
+    height: 65%;
+    padding: 15%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #65655E;
+}
+.text p{
+    line-height: 2em;
+    margin: 3em 0 2em 0;
+
+    text-align: center;
+}
+.title b{
+    font-weight: 300;
+    color: #fff;
+    margin-right: 0.5em;
+    font-family: 'Assistant', sans-serif;
+}
+.buttons li{
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+}
+.buttons li:last-child{
+    margin-right: 0;
+}
+.buttons li a{
+    display: block;
+
+    line-height: 30px;
+    border-radius: 15px;
+    text-align: center;
+
+    border: 1px solid transparent;
+    background-color: #000;
+    color: #fff;
+    box-sizing: border-box;
+
+    font-size: 0.9em;
+    font-family: 'Assistant', sans-serif;
+    transition-duration: 100ms;
+}
+.buttons li a:hover{
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    box-sizing: border-box;
+}
+.bottom{
+    height: 35%;
+    padding: 10% 15%;
+    box-sizing: border-box;
+    background: #000;
+
+    font-family: AppleL, sans-serif;
+}
+.bottom li{
+    float: left;
+    width: 100%;
+    line-height: 2em;
+    color: #fff;
+}
+.bottom span{
+    display: inline-block;
+    width: 20%;
+    margin-right: 8%;
+    text-align-last: justify;
+    font-family: AppleM, sans-serif;
+}
+/* 이미지 부분 */
+.image{
+    position: relative;
+    float: left;
+    width: 55%;
+    height: 100%;
+    
+    border-right: 1px solid #65655E;
+    box-sizing: border-box;
+}
+#lelabo .image{background: url(../images/layout_01.jpg) no-repeat #fff top center / contain;}
+#nudake .image{background: url(../images/layout_02.jpg) no-repeat #fff top center / contain;}
+#matinkim .image{background: url(../images/layout_03.jpg) no-repeat #fff top center / contain;}
+#randys .image{background: url(../images/layout_04.jpg) no-repeat #fff top center / contain;}
+#lelabo .image div:first-child{
+    left: 5%;
+    bottom: 10%;
+    z-index: 1;
+    width: 50%;
+}
+.image div{
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+
+    width: 65%;
+}
+.image img{
+    width: 100%;
+    display: block;
+}
+
+/* ===== footer ===== */
+footer{
+    height: 250px;
+    min-width: 1300px;
+
+    border-top: 1px solid #65655E;
+}
+#footer{
+    height: 80%;
+}
+#footer>li{
+    float: left;
+    width: 33.333%;
+    height: 100%;
+
+    border-right: 1px solid #65655E;
+    box-sizing: border-box;
+}
+#footer>li:last-child{
+    border-right: none;
+}
+.footer_title{
+    font-family: 'Assistant', sans-serif;
+    text-transform: uppercase;    
+    font-size: 2em;
+
+    font-weight: 200;
+}
+#contact{
+    position: relative;
+    background-color: #fff;
+}
+#contact .footer_title{
+    width: 35%;
+    font-size: 1.7em;
+    font-weight: 400;
+}
+#contact ul{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+
+    padding: 0 15%;
+    box-sizing: border-box;
+}
+#contact li{
+    margin-bottom: 0.5em;    
+}
+#contact li::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#contact span{
+    float: left;
+    display: block;
+    line-height: 32px;
+}
+.ft_menu a{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    font-size: 1.7em;
+
+    transition-duration: 100ms;
+}
+.ft_menu span{
+    position: absolute;
+    right: 0.5em;
+    bottom: 0.5em;
+}
+#ft_main a{
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition-duration: 100ms;
+}
+#ft_web:hover a{background-color: #000;}
+#ft_main:hover a{background: url("../images/main_footer_02.png") no-repeat center / cover;}
+#ft_main:hover span, #ft_web:hover span{color: #fff;}
+
+#ft_web{
+    background: url("../images/main_footer_01.png") no-repeat center / cover;
+}
+
+#copy{
+    height: 20%;
+    padding: 2.3% 5%;
+
+    box-sizing: border-box;
+
+    font-size: 0.9em;
+    
+    opacity: 0.8;
+
+    background-color:#fff;
+    border-top: 1px solid #65655E;
+
+    color: #000;
+}
+#copy>span{
+    float: right;
+    font-size: 0.8em;
+    color: #000;
+}
