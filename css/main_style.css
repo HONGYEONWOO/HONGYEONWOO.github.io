@@ -447,7 +447,7 @@ footer{
     background-color: #B5838D;
     cursor: pointer;
 }
-#contact p:hover span{
+#contact p:hover span, #contact p:hover span a{
     color: #fff;
 }
 
