@@ -221,7 +221,7 @@
 }
 #left{
     float: left;
-    width: 40%;
+    width: 45%;
     height: 100%;
 }
 #large_img{
@@ -284,11 +284,11 @@
 
 #right{
     float: left;
-    width: 60%;
+    width: 55%;
 
     line-height: 2em;
 
-    padding: 2.5% 15% 2.5% 2.5%;
+    padding: 2.5% 10% 2.5% 0;
     box-sizing: border-box;
 
 }
