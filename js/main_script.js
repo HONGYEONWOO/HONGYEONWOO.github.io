@@ -52,7 +52,7 @@ $(function(){
     
     var timerId = window.setInterval(slide,2500);
 
-    $("#container").hover(
+    $("#slide>li>span").hover(
         function(){
             window.clearInterval(timerId);
         },

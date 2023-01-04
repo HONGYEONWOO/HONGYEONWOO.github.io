@@ -301,6 +301,9 @@
 
     margin-bottom: 1%;
 }
+.list:hover{
+    cursor: pointer;
+}
 .list:nth-child(odd){
     margin-right: 1%;
 }
