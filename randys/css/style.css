@@ -1,0 +1,112 @@
+@font-face {
+    font-family: AppleM;
+    src: url('../../font/AppleSDGothicNeoM.woff');
+  }
+
+body{
+    background-color: pink;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: AppleM, sans-serif;
+}
+
+/* === 초기화 === */
+a{
+    text-decoration: none;
+    color: #333;
+}
+.button{
+    border: none;
+    outline: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* nav */
+#nav{
+    position: fixed;
+    width: 90%;
+    top: 2em;
+    left: 5%;
+    text-align: center;
+}
+#nav a{
+    color: #fff;
+}
+#nav>ul::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#nav>ul{
+    float: left;
+}
+#nav ul li{
+    float: left;
+}
+
+#logo{
+    display: block;
+    float: left;
+    width: 15%;
+    height: 5em;
+    background: url("../images/logo.png") no-repeat center / contain;
+}
+#logo span{
+    display: none;
+}
+
+/* nav login */
+#login, #sns{
+    width: 12.5%;
+    font-size: 0.9em;
+}
+#login li{
+    position: relative;
+    width: 50%;
+}
+#login li:first-child::after{
+    position: absolute;
+    content: "ㅣ";
+    top: 0;
+    right: 0;
+    display: block;
+    clear: both;
+    color: #fff;
+}
+#login li a{
+    text-align: center;
+    display: block;
+}
+
+.menu{
+    width: 30%;
+    margin-top: 3em;
+}
+.menu>li{
+    width: 33.333%;
+    line-height: 2em;
+    background: url("../images/menu_donuts.png") no-repeat center / contain;
+}
+#menu_sns a{
+    display: block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+}
+#menu_sns li:nth-child(1) a{background: url("../images/facebook.png") no-repeat center / contain;}
+#menu_sns li:nth-child(2) a{background: url("../images/instagram.png") no-repeat center / contain;}
+#menu_sns li:nth-child(3) a{background: url("../images/homepage.png") no-repeat center / contain;}
+#menu_sns span{
+    display: none;
+}
+
+
