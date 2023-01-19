@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main_style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Palanquin+Dark:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav id="nav" class="clearfix">
@@ -39,8 +44,8 @@
     <div id="navigator">
         <span>01</span>
         <div id="bar">
-            <span id="bar_donuts">donuts</span>
             <span id="percent">percent</span>
+            <span id="bar_donuts">donuts</span>
         </div>
         <span>04</span>
     </div>    <!-- //#navigator -->
@@ -48,7 +53,7 @@
     <div id="main_01" class="page num">
         <div id="main_donuts">
             <p id="mnm" class="donuts">
-                <span class="donuts_img">img</span>
+                <span>img</span>
                 <span class="title">M&M's Raised</span>
                 <span class="name">엠앤엠 도넛</span>
             </p>
@@ -59,7 +64,7 @@
                 <span>랜디스도넛의 베스트 도넛을 만나보세요!</span>
             </p>
             <p id="nutella" class="donuts">
-                <span class="donuts_img">img</span>
+                <span>img</span>
                 <span class="title">Nutella Raised</span>
                 <span class="name">누텔라 도넛</span>
             </p>
@@ -71,29 +76,38 @@
     </div>    <!-- //#main_01 -->
 
     <div id="main_02" class="page num">
-        <ul id="event">
-            <li><a href="#"><span>event_01</span></a></li>
-            <li class="on"><a href="#"><span>event_02</span></a></li>
-            <li><a href="#"><span>event_03</span></a></li>
-            <li><a href="#"><span>event_04</span></a></li>
-            <li><a href="#"><span>event_05</span></a></li>
-            <li><a href="#"><span>event_06</span></a></li>
-        </ul>
-
-        <p id="event_title">
-            <span>랜디스도넛만의 달콤한 이벤트</span>
-            <span class="title">EVENT</span>
-            <span>View more+</span>
-        </p>
+        <div id="event_box">
+            <ul id="event" class="clearfix">
+                <li><a href="#"><img src="images/event_01.jpg" alt="event_01"></a></li>
+                <li class="on"><a href="#"><img src="images/event_02.jpg" alt="event_02"></a></li>
+                <li><a href="#"><img src="images/event_03.jpg" alt="event_03"></a></li>
+                <li><a href="#"><img src="images/event_04.jpg" alt="event_04"></a></li>
+                <li><a href="#"><img src="images/event_05.jpg" alt="event_05"></a></li>
+                <li><a href="#"><img src="images/event_06.jpg" alt="event_06"></a></li>
+            </ul>
+            
+            <div id="event_title">
+                <h3>랜디스도넛만의 달콤한 이벤트</h3>
+                <h2>EVENT</h2>
+                <span><a href="#">View more+</a></span>
+            </div>
+        </div>
 
         <!-- 불렛 만들어야함 -->
     </div>    <!-- //#main_02 -->
 
     <div id="main_03" class="page num">
-        <img src="images/main_03_title.png" alt="Jeju">
-        <h2>제주에서 아이언맨 도넛을 만나다.</h2>
-        <h5>58년 역사의 랜디스 도넛(Randy's Donuts), 제주 애월 해안길에 국내 1호점 런칭</h5>
-        <button><span>view more</span></button>
+        <img src="images/main_03_img.png" alt="ironman" id="ironman">
+        <div id="jeju">
+            <p id="jeju_title">
+                <span>제 주 에 서</span>
+                <span>아 이 언 맨</span>
+                <span>도 넛 을 만 나 다</span>
+                <span>Randy's in JEJU!<span>
+            </p>
+            <p>58년 역사의 랜디스 도넛(Randy's Donuts), 제주 애월 해안길에 국내 1호점 런칭</p>
+        </div>
+        <a href="#" id="iron"><img src="images/ironman_more.png" alt="more"></a>
     </div>    <!-- //#main_03 -->
 
     <div id="main_04" class="page num">

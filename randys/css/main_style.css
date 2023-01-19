@@ -4,4 +4,205 @@ html, body{ height: 100%; }
     height: 100%;
     min-width: 1200px;
     overflow: hidden;
+
+    padding-top: 12%;
+    box-sizing: border-box;
+}
+
+/* main_01 */
+#main_01{
+    position: relative;
+    background: url("../images/main_01.jpg") no-repeat center / cover;
+}
+#main_donuts span{
+    display: block;
+}
+/* 위치 */
+#main_donuts p{
+    position: absolute;
+    bottom: 20%;
+    text-align: center;
+}
+/* 높이 */
+.donuts span:first-child{height: 10em;}
+#glazed span:first-child{height: 18em;}
+#mnm{
+    width: 20%;
+    left: 15%;
+}
+#glazed{
+    width: 30%;
+    left: 35%;
+}
+#nutella{
+    width: 20%;
+    right: 15%;
+}
+/* 이미지 */
+#mnm span:first-child{background: url("../images/main_mnm.png") no-repeat center / contain;}
+#glazed span:first-child{background: url("../images/main_glazed.png") no-repeat center / contain;}
+#nutella span:first-child{background: url("../images/main_nutella.png") no-repeat center / contain;}
+#main_donuts p span:first-child{
+    color: transparent;
+}
+/* 글씨 */
+.title{
+    font-size: 1.2em;
+    line-height: 3em;
+    margin-top: 1em;
+    color: #ff4e00;
+}
+.name{
+    font-size: 2em;
+    font-family: GmarketB,sans-serif;
+}
+#glazed span:last-child{
+    line-height: 3em;
+}
+.donuts{
+    padding-bottom: 3em;
+}
+#main_01 .more{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+}
+.more a{
+    display: block;
+    width: 180px;
+    line-height: 2em;
+    border-radius: 1.5em;
+    font-size: 0.9em;
+
+    border: 3px solid #fff;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #ff4e00;
+}
+.more a:hover{
+    background-color: #fff;
+    transition-duration: 100ms;
+}
+
+/* main_02 */
+#main_02{
+    background: url("../images/main_02.jpg") no-repeat center / cover;
+}
+#event_box{
+    position: relative;
+}
+#event{
+    width: 120%;
+    margin-left: -5%;
+}
+#event li{
+    float: left;
+    width: 14%;
+    margin-right: 0.333%;
+    transform: translateY(100%);
+}
+#event li.on{
+    width: 28%;
+    transform: translateY(0);
+}
+#event img{
+    display: block;
+    width: 100%;
+}
+#event_title{
+    position: absolute;
+    top: 0;
+    left: 48%;
+    width: 40%;
+}
+#event_title h3{
+    font-size: 1.5em;
+    font-family: GmarketL,sans-serif;
+}
+#event_title h2{
+    font-size: 6em;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-weight: 700;
+    color: #f4a733;
+    line-height: 0.9em;
+}
+#event_title a{
+    display: block;
+    text-align: right;
+    margin-top: 2.5em;
+    font-size: 0.9em;
+}
+#event_title a:hover{
+    color: #f4a733;
+    transition-duration: 100ms;
+}
+
+/* main_03 */
+#main_03{
+    position: relative;
+    background: url("../images/main_03_bg.jpg") no-repeat center / cover;
+}
+#ironman{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+#jeju{
+    position: absolute;
+    top: 25%;
+    left: 12%;
+    width: 35%;
+    color: #fff;
+    z-index: 1;
+}
+#jeju span{
+    display: block;
+}
+#jeju_title{
+    position: relative;
+}
+#jeju_title span:not(:last-child){
+    font-family: GmarketB, sans-serif;
+    font-size: 6.5em;
+    text-align-last: justify;
+}
+#jeju_title span:nth-child(2){
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 2px;
+    color: transparent;
+}
+#jeju_title span:nth-child(3){
+    font-size: 4.5em;
+}
+#jeju_title span:last-child{
+    position: absolute;
+    bottom: -0.4em;
+    right: -1.8em;
+    font-family: 'Assistant', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 4em;
+    text-align: right;
+    color: #ff1000;
+}
+#jeju p:last-child{
+    font-size: 1.3em;
+    line-height: 1.5em;
+    font-family: GmarketL, sans-serif;
+    margin-top: 2em;
+    text-align: justify;
+}
+#iron{
+    display: block;
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    width: 8em;
+    height: 8em;
+}
+#iron img{
+    display: block;
+    width: 100%;
 }
