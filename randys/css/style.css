@@ -11,8 +11,40 @@
     src: url('../../font/GmarketSansTTFLight.woff');
   }
 
+  /* === keyframes === */
+@keyframes leftMove{
+    from{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+  
+  @keyframes rightMove{
+      from{
+          transform: translateX(-50px);
+          opacity: 0;
+      }
+      to{
+          transform: translateX(0);
+          opacity: 1;
+      }
+  }
+
+@keyframes upMove{
+    from{
+        transform: translateY(50px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+  
 body{
-    background-color: pink;
+    background-color: #fff;
     color: #333;
     margin: 0;
     padding: 0;
@@ -52,6 +84,8 @@ a{
 }
 #nav a{
     color: #fff;
+
+    transition-duration: 200ms;
 }
 #nav>ul::after{
     content: "";
@@ -138,20 +172,20 @@ a{
     font-weight: 600;
     line-height: 1.5em;
     text-align: center;
-    color: #fff;
+    color: #000;
 
     z-index: 10;
 }
 #navigator>span:first-child{
-    -webkit-text-stroke-color: #fff;
-    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 1px;
     color: transparent;
 }
-#bar{
+#navigator>div{
     position: relative;
     height: 7em;
 }
-#bar span{
+#navigator>div span{
     display: block;
     position: absolute;
     width: 0.15em;
@@ -160,11 +194,13 @@ a{
     transform: translateX(-50%);
     color: transparent;
 }
-#bar_donuts{
-    height: 25%;
-    background-color: #333;
+#bar{
+    height: 20%;
+    background-color: #000;
+
+    transition-duration: 100ms;
 }
-#percent{
+#barbox{
     height: 100%;
     background-color: #fff;
 }

@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main_style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/main_script.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,12 +44,12 @@
     </nav>    <!-- //#nav -->
 
     <div id="navigator">
-        <span>01</span>
-        <div id="bar">
-            <span id="percent">percent</span>
-            <span id="bar_donuts">donuts</span>
+        <span id="number">01</span>
+        <div>
+            <span id="barbox">percent</span>
+            <span id="bar">movebar</span>
         </div>
-        <span>04</span>
+        <span>05</span>
     </div>    <!-- //#navigator -->
 
     <div id="main_01" class="page num">
@@ -91,9 +93,14 @@
                 <h2>EVENT</h2>
                 <span><a href="#">View more+</a></span>
             </div>
-        </div>
 
-        <!-- 불렛 만들어야함 -->
+            <!--
+                불렛
+                <ul id="bullets">
+                    <li><a href="#"></a></li>     
+                </ul>
+            -->
+        </div>
     </div>    <!-- //#main_02 -->
 
     <div id="main_03" class="page num">
@@ -111,46 +118,56 @@
     </div>    <!-- //#main_03 -->
 
     <div id="main_04" class="page num">
-        <img src="images/main_store.png" alt="store">
-        <div id="store">
-            <a href="#"><span>매장정보 안내</span></a>
-            <a href="#"><span>가맹점 문의</span></a>
+        <div id="store_box">
+            <img src="images/main_store.png" alt="store">
+            <div id="store" class="clearfix">
+                <a href="#"><span>매장정보 안내</span></a>
+                <a href="#"><span>가맹점 문의</span></a>
+            </div>
         </div>
     </div>    <!-- //#main_04 -->
 
     <div id="main_05" class="page num">
-        <ul id="sns">
+        <ul id="sns" class="clearfix">
             <li>
-                <img src="images/main_homepage.png" alt="homepage">
-                <a href="#"><span>randysdonuts.com</span></a>
+                <a href="#">
+                    <img src="images/main_homepage.png" alt="homepage">
+                    <span>randysdonuts.com</span>
+                </a>
             </li>
             <li>
-                <img src="images/main_instagram.png" alt="instagram">
-                <a href="#"><span>@randysdonuts1962</span></a>
+                <a href="#">
+                    <img src="images/main_instagram.png" alt="instagram">
+                    <span>@randysdonuts1962</span>
+                </a>
             </li>
             <li>
-                <img src="images/main_facebook.png" alt="facebook">
-                <a href="#"><span>randysdonutskr</span></a>
+                <a href="#">
+                    <img src="images/main_facebook.png" alt="facebook">
+                    <span>randysdonutskr</span>
+                </a>
             </li>
         </ul>
 
-        <footer id="footer">
+        <footer id="footer" class="clearfix">
             <a href="#"><img src="images/footer_logo.png" alt="logo"></a>
-            <ul>
-                <li><a href="#">이용약관</a></li>
-                <li><a href="#">개인정보처리방침</a></li>
-                <li><a href="#">이메일 무단수집거부</a></li>
-                <li><a href="#">법적고지</a></li>
-                <li><a href="#">사업자정보확인</a></li>
-            </ul>
-
-            <ul>
-                <li>사업자등록번호 : 565-87-01114</li>
-                <li>대표 메일 : randysdonuts@rapport-l.com</li>
-                <li>대표 번호 : 02-6954-0621</li><br>
-                <li>서울특별시 마포구 동교로 247 4층, 5층</li>
-            </ul>
-            <span>Copyright © 2019, Randy's Donuts. All Rights Reserved</span>
+            <div>
+                <ul class="clearfix">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">이메일 무단수집거부</a></li>
+                    <li><a href="#">법적고지</a></li>
+                    <li><a href="#">사업자정보확인</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+    
+                <ul class="clearfix">
+                    <li>사업자등록번호 : 565-87-01114</li>
+                    <li>대표 메일 : randysdonuts@rapport-l.com</li>
+                    <li>대표 번호 : 02-6954-0621</li>
+                    <li>서울특별시 마포구 동교로 247 4층, 5층</li>
+                </ul>
+                <span>Copyright © 2022, Randy's Donuts. All Rights Reserved</span>
+            </div>
         </footer>
     </div>
 </body>

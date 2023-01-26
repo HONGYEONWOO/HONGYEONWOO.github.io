@@ -29,14 +29,33 @@ html, body{ height: 100%; }
 #mnm{
     width: 20%;
     left: 15%;
+
+    opacity: 0;
 }
 #glazed{
     width: 30%;
     left: 35%;
+    display: none;
 }
 #nutella{
     width: 20%;
     right: 15%;
+
+    opacity: 0;
+}
+#mnm.on{
+    opacity: 1;
+
+    animation-name: rightMove;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+}
+#nutella.on{
+    opacity: 1;
+
+    animation-name: leftMove;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
 }
 /* 이미지 */
 #mnm span:first-child{background: url("../images/main_mnm.png") no-repeat center / contain;}
@@ -106,6 +125,9 @@ html, body{ height: 100%; }
 #event li.on{
     width: 28%;
     transform: translateY(0);
+    border: 4px solid #fff;
+    box-sizing: border-box;
+
 }
 #event img{
     display: block;
@@ -118,15 +140,36 @@ html, body{ height: 100%; }
     width: 40%;
 }
 #event_title h3{
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-family: GmarketL,sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    opacity: 0;
 }
 #event_title h2{
     font-size: 6em;
     font-family: 'Palanquin Dark', sans-serif;
     font-weight: 700;
-    color: #f4a733;
+    color: #fff;
     line-height: 0.9em;
+
+    opacity: 0;
+}
+@keyframes textMove{
+    from{
+        transform: translateY(0.5em);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+#event_title h3.on, #event_title h2.on{
+    opacity: 1;
+    
+    animation: textMove;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
 }
 #event_title a{
     display: block;
@@ -135,8 +178,36 @@ html, body{ height: 100%; }
     font-size: 0.9em;
 }
 #event_title a:hover{
-    color: #f4a733;
+    color: #fff;
     transition-duration: 100ms;
+}
+#bullets{
+    width: 192px;
+    margin: 50px auto;
+}
+#bullets::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#bullets>li{
+    float: left;
+    margin: 0 6px;
+}
+#bullets>li>a{
+    display: block;
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+    transition-duration: 400;
+    
+    background-color: rgba(0, 0, 0, 0.4);
+    
+    transition-duration: 100ms;
+}
+#bullets>li>a.on{
+    background-color: rgba(0, 0, 0, 0.95);
 }
 
 /* main_03 */
@@ -169,15 +240,22 @@ html, body{ height: 100%; }
     font-size: 6.5em;
     text-align-last: justify;
 }
-#jeju_title span:nth-child(2){
+#jeju_title span:nth-child(1), #jeju_title span:nth-child(2).on{
     -webkit-text-stroke-color: #fff;
     -webkit-text-stroke-width: 2px;
     color: transparent;
 }
+#jeju_title span:nth-child(1).on, #jeju_title span:nth-child(2), #jeju_title span:nth-child(3).on{
+    color: #fff;
+    -webkit-text-stroke-width: 0px;
+}
 #jeju_title span:nth-child(3){
     font-size: 4.5em;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 1px;
+    color: transparent;
 }
-#jeju_title span:last-child{
+#jeju_title span:nth-child(4){
     position: absolute;
     bottom: -0.4em;
     right: -1.8em;
@@ -185,13 +263,21 @@ html, body{ height: 100%; }
     font-family: 'Permanent Marker', cursive;
     font-size: 4em;
     text-align: right;
-    color: #ff1000;
+    color: #fff100;
+
+    opacity: 0;
+}
+#jeju_title span:nth-child(4).on{
+    opacity: 1;
+
+    animation-name: leftMove;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
 }
 #jeju p:last-child{
     font-size: 1.3em;
     line-height: 1.5em;
-    font-family: GmarketL, sans-serif;
-    margin-top: 2em;
+    margin-top: 3em;
     text-align: justify;
 }
 #iron{
@@ -205,4 +291,177 @@ html, body{ height: 100%; }
 #iron img{
     display: block;
     width: 100%;
+    transform: rotate(0deg);
+}
+#iron img:hover{
+    transform: rotate(360deg);
+
+    transition-duration: 500ms;
+}
+
+/* main_04 */
+#main_04{
+    position: relative;
+    background: url("../images/main_04.jpg") no-repeat center / cover;
+}
+#store_box{
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    display: none;
+}
+#main_04 img{
+    display: block;
+    width: 100%;
+}
+#store{
+    width: 95%;
+    margin: 0 auto;
+
+    line-height: 2.5em;
+    background-color: #fe5300;
+    border: 4px solid #fff;
+    border-radius: 2em;
+
+    z-index: 1;
+}
+#store span{
+    color: #fff;
+}
+#store a{
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+#store>a:first-child::after{
+    float: right;
+    display: block;
+    content: "｜";
+    color: #fff;
+    clear: both;
+}
+#store>a:hover>span{
+    color: #fff;
+}
+#store:hover>a:not(:hover)>span{
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* #main_05 */
+#main_05{
+    position: relative;
+    background-color: #ffdf64;
+}
+#sns{
+    width: 35%;
+    height: calc(100% - 180px);
+    margin: 0 auto;
+    padding-top: 2em;
+    box-sizing: border-box;
+}
+#sns li{
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+
+    opacity: 0;
+}
+#sns li.on{
+    opacity: 1;
+
+    animation-name: upMove;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+}
+#sns li:last-child{
+    margin-right: 0;
+}
+#sns li img{
+    display: block;
+    width: 100%;
+}
+#sns li a{
+    display: block;
+}
+#sns li span{
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+    opacity: 0;
+    color: #333;
+}
+#sns:hover span{
+    opacity: 1;
+    transition-duration: 100ms;
+}
+#sns:hover li:not(:hover) span{
+    color: #fff;
+    transition-duration: 200ms;
+}
+#footer{
+    width: 100%;
+    height: 180px;
+    padding: 2.5em 10%;
+    box-sizing: border-box;
+    background-color: #434343;
+}
+#footer>a{
+    float: left;
+    width: 15%;
+    height: 100%;
+    margin-right: 20%;
+}
+#footer>a>img{
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+}
+#footer div{
+    float: left;
+    width: 65%;
+}
+#footer ul li{
+    float: left;
+    line-height: 2em;
+}
+#footer ul:first-child li{
+    width: 20%;
+    text-align: center;
+}
+#footer ul a{
+    display: block;
+    color: #fff;
+}
+#footer ul:nth-child(2){
+    margin-top: 1em;
+}
+#footer ul:nth-child(2) li{
+    width: 30%;
+    color: #fff;
+    font-size: 0.8em;
+}
+#footer ul:nth-child(2) li:nth-child(2){
+    width: 40%;
+    text-align: center;
+}
+#footer ul:nth-child(2) li:nth-child(3){
+    text-align: right;
+}
+#footer ul:nth-child(2) li:not(:first-child, :last-child)::before{
+    float: left;
+    display: block;
+    clear: both;
+    content: "｜";
+    color: #fff;
+}
+#footer span{
+    display: block;
+    text-align: right;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.4);
+    font-family: GmarketL, sans-serif;
 }
